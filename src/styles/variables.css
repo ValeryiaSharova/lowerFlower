@@ -4,6 +4,7 @@
   /* COLORS */
 
   --color-black: #040a0a;
+  --color-black2: #212121;
   --color-grey: #555555;
   --color-white: #ffffff;
 
@@ -14,12 +15,16 @@
   --color-purple: #7d2253;
   --color-pink: #d978ac;
 
+  --color-red: #ff3a44;
+
   /* FONT WEIGHT */
 
   --fontWeight-900: 900;
+  --fontWeight-400: 400;
 
   /* FONT SIZE */
 
+  --font-size14: 14px;
   --fontSize-12: 12px;
 
   /* TRANSITION */
