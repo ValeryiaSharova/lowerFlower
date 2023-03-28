@@ -45,6 +45,7 @@ html {
 
 body {
   --webkit-overflow-scrolling: touch;
+  background-color: #040a0a;
 }
 
 ul,
