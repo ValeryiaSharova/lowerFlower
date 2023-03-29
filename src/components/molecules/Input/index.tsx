@@ -55,7 +55,7 @@ export const Input: React.FC<Props> = ({
           disabled={isDisabled}
         />
         {isError && (
-          <Icon icon="exclamationOutlined" size="l" color="var(--color-red)" />
+          <Icon icon="exclamationOutlined" size={18} color="var(--color-red)" />
         )}
       </div>
     </label>

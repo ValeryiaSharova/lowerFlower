@@ -8,11 +8,16 @@ import * as icons from 'src/components/atoms/Icon/icons';
 # Icon Gallery
 
 <IconGallery>
-  {Object.keys(icons.iconsAnt)
+  {Object.keys({
+    ...Object.fromEntries(
+      Object.entries(icons).filter((objKey) => objKey[0] !== 'iconsAnt')
+    ),
+    ...icons.iconsAnt,
+  })
     .sort((a, b) => String(a).localeCompare(String(b)))
     .map((name) => (
       <IconItem name={name} key={name}>
-        <IconExample icon={name} color="black" size="l" />
+        <IconExample icon={name} fill="#2e3240" size={30} />
       </IconItem>
     ))}
 </IconGallery>

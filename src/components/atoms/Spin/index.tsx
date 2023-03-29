@@ -8,7 +8,7 @@ export type Props = {
   color: 'black' | 'white';
 };
 
-export const Spin: React.FC<Props> = ({ color, size = 'l' }) => (
+export const Spin: React.FC<Props> = ({ color, size = 30 }) => (
   <SpinAnt
     indicator={<Icon icon="loadingOutlined" size={size} color={color} />}
   />

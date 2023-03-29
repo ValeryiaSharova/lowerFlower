@@ -13,5 +13,5 @@ export const Spin: Story<Props> = (args) => <SpinComponent {...args} />;
 
 Spin.args = {
   color: 'black',
-  size: 'l',
+  size: 30,
 };
