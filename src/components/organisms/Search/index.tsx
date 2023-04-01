@@ -15,6 +15,7 @@ type InputPropsType = {
 
 export const Search = () => {
   const [value, setValue] = useState('');
+  const [isVisible, setIsVisible] = useState(false);
 
   const getInputProps = () => {
     const inputProps: InputPropsType = {};
@@ -47,10 +48,16 @@ export const Search = () => {
   const handleClose = () => {
     if (value) {
       setValue('');
+    } else {
+      setIsVisible(false);
     }
   };
 
-  return (
+  const openSearch = () => {
+    setIsVisible(true);
+  };
+
+  return isVisible ? (
     <div className={styles.wrapper}>
       <TextField
         value={value}
@@ -62,6 +69,11 @@ export const Search = () => {
         InputProps={getInputProps()}
         className={classNames(styles.textField, styles.withStartIcon)}
       />
+    </div>
+  ) : (
+    <div className={styles.container} role="button" onClick={openSearch}>
+      <Icon color="var(--color-white)" icon="search" size={18} />
+      <span className={styles.text}>поиск</span>
     </div>
   );
 };

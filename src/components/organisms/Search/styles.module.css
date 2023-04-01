@@ -25,3 +25,19 @@
 .textField :global .MuiInput-root:hover:not(.Mui-disabled):before {
   border-bottom: 0.5px solid var(--color-grey);
 }
+
+.container {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.text {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
