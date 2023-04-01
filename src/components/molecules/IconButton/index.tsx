@@ -7,7 +7,7 @@ import styles from 'src/components/molecules/IconButton/styles.module.css';
 export type Props = {
   color?: IconProps['color'];
   icon: IconProps['icon'];
-  size?: IconProps['size'];
+  size: IconProps['size'];
   onClick: () => void;
 };
 

@@ -13,8 +13,8 @@ type ExportedIconsType = Exclude<IconType, 'iconsAnt'>;
 type IconSizeType = 18 | 30;
 
 export type Props = {
-  icon?: ExportedIconsType | AntIconType;
-  size?: IconSizeType;
+  icon: ExportedIconsType | AntIconType;
+  size: IconSizeType;
   color?: string;
 };
 
