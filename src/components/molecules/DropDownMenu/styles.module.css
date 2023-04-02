@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background: var(--color-black3);
+  backdrop-filter: blur(10px);
+  padding: 0.625rem 1.25rem;
+  width: max-content;
+  position: absolute;
+  top: 5rem;
+}

@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+}
+
+.phone {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-green);
+}

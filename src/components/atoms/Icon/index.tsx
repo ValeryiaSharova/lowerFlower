@@ -1,31 +1,44 @@
 import React from 'react';
 
 import { iconsAnt } from 'src/components/atoms/Icon/icons';
+import * as icons from 'src/components/atoms/Icon/icons';
 
 import styles from 'src/components/atoms/Icon/styles.module.css';
 
-type IconType = keyof typeof iconsAnt;
-type IconSizeType = 'xs' | 's' | 'm' | 'l';
+type AntIconType = keyof typeof iconsAnt;
+type IconType = keyof typeof icons;
+
+type ExportedIconsType = Exclude<IconType, 'iconsAnt'>;
+
+type IconSizeType = 18 | 30;
 
 export type Props = {
-  icon?: IconType;
-  size?: IconSizeType;
+  icon: ExportedIconsType | AntIconType;
+  size: IconSizeType;
   color?: string;
 };
 
 const iconSize: Record<IconSizeType, string> = {
-  xs: styles.sizeXS,
-  s: styles.sizeS,
-  m: styles.sizeM,
-  l: styles.sizeL,
+  18: styles.size18,
+  30: styles.size30,
 };
 
 export const Icon: React.FC<Props> = ({
   icon = 'loadingOutlined',
-  size = 'm',
+  size = 30,
   color = 'var(--color-black)',
 }) => {
-  const Component = iconsAnt[icon as IconType];
+  const Component =
+    iconsAnt[icon as AntIconType] || icons[icon as ExportedIconsType];
 
-  return <Component className={iconSize[size]} style={{ color }} />;
+  return (
+    <div className={iconSize[size]}>
+      <div className={styles.wrapper}>
+        <Component
+          style={{ color, fill: color }}
+          className={styles.wrapperSvg}
+        />
+      </div>
+    </div>
+  );
 };

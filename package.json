@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "build-storybook": "build-storybook -s public",
+    "build:storybook": "build-storybook -s public",
     "build": "react-scripts build",
     "lint:fix": "eslint . --ext .ts,.tsx, --fix",
     "lint": "eslint . --ext .ts,.tsx",
@@ -16,6 +16,9 @@
     "watch": "react-scripts start"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.15",
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-interactions": "^6.5.16",

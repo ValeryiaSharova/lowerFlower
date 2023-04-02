@@ -1,0 +1,43 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.textField [class*='MuiInputBase-input'] {
+  margin: auto 0;
+  color: var(--color-white);
+  font-family: 'Oswald', sans-serif;
+}
+
+.textField [class*='MuiInputBase-input']::placeholder {
+  color: var(--color-grey2);
+}
+
+.textField [class*='MuiInputBase-input'] input {
+  margin: auto 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.textField :global .MuiInputBase-root::before,
+.textField :global .MuiInput-root::after,
+.textField :global .MuiInput-root:hover:not(.Mui-disabled):before {
+  border-bottom: 0.5px solid var(--color-grey);
+}
+
+.container {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.text {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}

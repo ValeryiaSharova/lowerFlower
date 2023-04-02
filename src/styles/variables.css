@@ -5,7 +5,9 @@
 
   --color-black: #040a0a;
   --color-black2: #212121;
+  --color-black3: #00000033;
   --color-grey: #555555;
+  --color-grey2: #7c7c7c;
   --color-white: #ffffff;
 
   --color-darkGreen: #01281f;
@@ -20,7 +22,9 @@
   /* FONT WEIGHT */
 
   --fontWeight-900: 900;
+  --fontWeight-700: 700;
   --fontWeight-400: 400;
+  --fontWeight-300: 300;
 
   /* FONT SIZE */
 
@@ -43,6 +47,7 @@ html {
 
 body {
   --webkit-overflow-scrolling: touch;
+  background-color: #040a0a;
 }
 
 ul,
