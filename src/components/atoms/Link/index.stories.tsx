@@ -9,11 +9,7 @@ export default {
   decorators,
 } as Meta;
 
-export const Link: Story<Props> = (args) => (
-  <div style={{ backgroundColor: 'black', padding: '2rem' }}>
-    <LinkComponent {...args} />
-  </div>
-);
+export const Link: Story<Props> = (args) => <LinkComponent {...args} />;
 
 Link.args = {
   text: 'Главная',

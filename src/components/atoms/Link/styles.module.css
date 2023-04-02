@@ -37,3 +37,10 @@
   color: var(--color-green);
   cursor: pointer;
 }
+
+.wrapper {
+  position: relative;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}

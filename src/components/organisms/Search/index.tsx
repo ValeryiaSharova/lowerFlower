@@ -1,21 +1,25 @@
 import InputAdornment from '@mui/material/InputAdornment';
 import TextField from '@mui/material/TextField';
 import classNames from 'classnames';
-import { ChangeEvent, ReactNode, SyntheticEvent, useState } from 'react';
+import React, { ChangeEvent, ReactNode, SyntheticEvent, useState } from 'react';
 
 import { Icon } from 'src/components/atoms/Icon';
 import { IconButton } from 'src/components/molecules/IconButton';
 
 import styles from 'src/components/organisms/Search/styles.module.css';
 
+export type Props = {
+  setIsVisible: (flag: boolean) => void;
+  isVisible: boolean;
+};
+
 type InputPropsType = {
   endAdornment?: ReactNode;
   startAdornment?: ReactNode;
 };
 
-export const Search = () => {
+export const Search: React.FC<Props> = ({ isVisible, setIsVisible }) => {
   const [value, setValue] = useState('');
-  const [isVisible, setIsVisible] = useState(false);
 
   const getInputProps = () => {
     const inputProps: InputPropsType = {};

@@ -1,20 +1,22 @@
+import React from 'react';
+
 import { Link } from 'src/components/atoms/Link';
 
 import styles from 'src/components/organisms/Menu/styles.module.css';
 
-const links = [
-  'Главная',
-  'Каталог',
-  'Доставка и оплата',
-  'О нас',
-  'Контакты',
-  'FAQ',
-];
+export type Props = {
+  links: { text: string; items?: string[] }[];
+};
 
-export const Menu = () => (
+export const Menu: React.FC<Props> = ({ links }) => (
   <div className={styles.wrapper}>
     {links.map((link, index) => (
-      <Link key={link + index} type="default" text={link} />
+      <Link
+        key={link.text + index}
+        type="default"
+        text={link.text}
+        items={link.items}
+      />
     ))}
   </div>
 );
