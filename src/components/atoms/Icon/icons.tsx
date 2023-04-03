@@ -5,6 +5,9 @@ export { ReactComponent as search } from 'src/assets/icons/search.svg';
 export { ReactComponent as close } from 'src/assets/icons/close.svg';
 export { ReactComponent as bag } from 'src/assets/icons/bag.svg';
 export { ReactComponent as phone } from 'src/assets/icons/phone.svg';
+export { ReactComponent as instagram } from 'src/assets/icons/inst.svg';
+export { ReactComponent as whatsUp } from 'src/assets/icons/whatsUp.svg';
+export { ReactComponent as mobile } from 'src/assets/icons/mobile.svg';
 
 export const iconsAnt = {
   loadingOutlined: LoadingOutlined,
