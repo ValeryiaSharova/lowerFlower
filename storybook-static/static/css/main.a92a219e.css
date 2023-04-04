@@ -36,6 +36,14 @@
   font-size: 30px;
 }
 
+.styles_green__crP7U {
+  background: var(--color-highlightGreen);
+}
+
+.styles_pink__GFgLg {
+  background: var(--color-purple);
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -400,6 +408,7 @@ template {
   --color-white: #ffffff;
 
   --color-darkGreen: #01281f;
+  --color-highlightGreen: #249479;
   --color-green: #43ffd2;
 
   --color-darkPurple: #1b000e;
@@ -804,4 +813,4 @@ a {
 }
 
 
-/*# sourceMappingURL=main.69367e14.css.map*/
+/*# sourceMappingURL=main.a92a219e.css.map*/
