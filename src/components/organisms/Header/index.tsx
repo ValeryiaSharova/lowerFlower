@@ -53,7 +53,7 @@ export const Header: React.FC<Props> = ({ isFixed }) => {
         >
           <Search isVisible={isVisible} setIsVisible={setIsVisible} />
           {!isVisible && isFixed && (
-            <MobilePhone isIcon phone="+375 (29) 113-69-69" />
+            <MobilePhone isIcon phone="+375 (29) 113-69-69" size={14} />
           )}
         </div>
         {isFixed && <Cart count={5} />}

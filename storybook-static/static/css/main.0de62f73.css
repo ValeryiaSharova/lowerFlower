@@ -20,6 +20,14 @@
   min-height: 100%;
 }
 
+.styles_size16__kDJ5y {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+  font-size: 16px;
+}
+
 .styles_size18__xjn7Q {
   width: 18px;
   height: 18px;
@@ -44,12 +52,130 @@
   font-size: 30px;
 }
 
-.styles_green__crP7U {
-  background: var(--color-highlightGreen);
+.styles_wrapper__yJGOq {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
 }
 
-.styles_pink__GFgLg {
-  background: var(--color-purple);
+.styles_phone__94pj\+ {
+  font-weight: var(--fontWeight-400);
+
+  line-height: 1.313rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.styles_size14__jBTE9 {
+  font-size: var(--font-size14);
+}
+
+.styles_size16__xUirJ {
+  font-size: var(--font-size16);
+}
+
+.styles_wrapper__C3pLV {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.styles_count__r6yUI {
+  background: var(--color-green);
+  font-weight: var(--fontWeight-400);
+  font-size: var(--fontSize-12);
+  line-height: 1.125rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 50%;
+  padding: 0 0.375rem;
+  position: absolute;
+  left: 65%;
+  top: -10%;
+  z-index: 1;
+}
+
+.styles_wrapper__gEFi- {
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.styles_container__NIzii {
+  position: absolute;
+  right: 0;
+  text-align: end;
+}
+
+.styles_infoWrapper__XBCkc {
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+}
+
+.styles_title__ZKXyh {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.styles_info__289lB {
+  font-weight: var(--fontWeight-300);
+  font-size: var(--fontSize-10);
+  line-height: 0.938rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.styles_time__zpqXL {
+  width: 4.625rem;
+  float: right;
+}
+
+.styles_iconContainer__km9Lc {
+  float: right;
+  padding-top: 3.75rem;
+}
+
+.styles_iconWrapper__tUK7d {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.styles_call__B\+U8X {
+  display: flex;
+  flex-direction: column;
+  gap: 0.438rem;
+  clear: right;
+  padding-top: 11.5rem;
+  align-items: flex-end;
+}
+
+.styles_callText__6FIhy {
+  display: flex;
+  gap: 0.375rem;
+  align-items: center;
+}
+
+.styles_callText__6FIhy span {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.styles_cart__oz-8s {
+  padding-top: 1.25rem;
+  float: right;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -408,6 +534,7 @@ template {
 :root {
   /* COLORS */
 
+  --color-totalBlack: #000000;
   --color-black: #040a0a;
   --color-black2: #212121;
   --color-black3: #00000033;
@@ -477,6 +604,14 @@ h6 {
 
 a {
   text-decoration: none;
+}
+
+.styles_green__crP7U {
+  background: var(--color-highlightGreen);
+}
+
+.styles_pink__GFgLg {
+  background: var(--color-purple);
 }
 
 .styles_wrapper__T5kHF {
@@ -555,21 +690,6 @@ a {
   height: 9.375rem;
 }
 
-.styles_wrapper__yJGOq {
-  display: flex;
-  gap: 0.625rem;
-  align-items: center;
-}
-
-.styles_phone__94pj\+ {
-  font-weight: var(--fontWeight-400);
-  font-size: var(--font-size14);
-  line-height: 1.313rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-green);
-}
-
 .styles_button__JYgjt {
   padding: 1rem 3.125rem;
   font-weight: var(--fontWeight-900);
@@ -640,28 +760,6 @@ a {
   background: var(--color-green);
   color: var(--color-black);
   box-shadow: inset 0 0 0.625rem var(--color-darkGreen);
-}
-
-.styles_wrapper__C3pLV {
-  position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.styles_count__r6yUI {
-  background: var(--color-green);
-  font-weight: var(--fontWeight-400);
-  font-size: var(--fontSize-12);
-  line-height: 1.125rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  border-radius: 50%;
-  padding: 0 0.375rem;
-  position: absolute;
-  left: 65%;
-  top: -10%;
-  z-index: 1;
 }
 
 .styles_container__0ma8W {
@@ -885,6 +983,10 @@ a {
   gap: 4.375rem;
 }
 
+.styles_fixed__HI6Bb {
+  background-color: var(--color-totalBlack);
+}
+
 .styles_container__8mI9U {
   display: flex;
   align-items: center;
@@ -900,4 +1002,4 @@ a {
 }
 
 
-/*# sourceMappingURL=main.972db627.css.map*/
+/*# sourceMappingURL=main.0de62f73.css.map*/
