@@ -4,7 +4,7 @@ import styles from 'src/components/molecules/Dimmer/styles.module.css';
 
 export type Props = {
   children: ReactNode;
-  padding?: number;
+  padding?: number | string;
   borderRadius?: number;
   width?: number | string;
 };
