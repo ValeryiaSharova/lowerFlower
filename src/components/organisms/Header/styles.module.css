@@ -5,6 +5,10 @@
   gap: 4.375rem;
 }
 
+.fixed {
+  background-color: var(--color-totalBlack);
+}
+
 .container {
   display: flex;
   align-items: center;
