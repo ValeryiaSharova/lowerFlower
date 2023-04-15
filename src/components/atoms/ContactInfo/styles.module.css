@@ -1,7 +1,9 @@
 .container {
   position: absolute;
-  right: 0;
+  right: 10.313rem;
+  top: 1.25rem;
   text-align: end;
+  z-index: 3;
 }
 
 .infoWrapper {

@@ -5,10 +5,13 @@ import styles from 'src/components/atoms/Highlight/styles.module.css';
 export type Props = {
   width: number;
   height: number;
-  radius: number;
   color: 'green' | 'pink';
   rotate: number;
   blur: number;
+  position?: 'absolute' | 'relative';
+  top?: number;
+  left?: number;
+  right?: number;
 };
 
 const colorStyles: Record<Props['color'], string> = {
@@ -20,16 +23,22 @@ export const Highlight: React.FC<Props> = ({
   blur,
   color,
   height,
-  radius,
   rotate,
   width,
+  position = 'relative',
+  top,
+  left,
+  right,
 }) => {
   const style: React.CSSProperties = {
     width,
     height,
-    borderRadius: radius,
     filter: `blur(${blur}px)`,
     transform: `rotate(${rotate}deg)`,
+    position,
+    top,
+    left,
+    right,
   };
 
   return <div className={colorStyles[color]} style={style} />;

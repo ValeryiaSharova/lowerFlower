@@ -1,17 +1,21 @@
+import classNames from 'classnames';
 import React from 'react';
 
-import { Link } from 'src/components/atoms/Link';
+import { MenuLink } from 'src/components/atoms/MenuLink';
 
 import styles from 'src/components/molecules/DropDownMenu/styles.module.css';
 
 export type Props = {
   items: string[];
+  isAbsolute?: boolean;
 };
 
-export const DropDownMenu: React.FC<Props> = ({ items }) => (
-  <div className={styles.wrapper}>
+export const DropDownMenu: React.FC<Props> = ({ items, isAbsolute }) => (
+  <div
+    className={classNames(styles.wrapper, { [styles.topPadding]: isAbsolute })}
+  >
     {items.map((item, index) => (
-      <Link key={item + index} text={item} type="default" />
+      <MenuLink key={item + index} text={item} type="default" />
     ))}
   </div>
 );

@@ -11,13 +11,19 @@ import styles from 'src/components/organisms/Header/styles.module.css';
 
 export type Props = {
   isFixed: boolean;
+  isAbsolute?: boolean;
 };
 
-export const Header: React.FC<Props> = ({ isFixed }) => {
+export const Header: React.FC<Props> = ({ isFixed, isAbsolute = false }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <div className={classNames(styles.wrapper, { [styles.fixed]: isFixed })}>
+    <div
+      className={classNames(styles.wrapper, {
+        [styles.fixed]: isFixed,
+        [styles.absolute]: isAbsolute,
+      })}
+    >
       <Logo logo="logo" size="m" />
       <div className={styles.container}>
         <Menu
@@ -44,6 +50,7 @@ export const Header: React.FC<Props> = ({ isFixed }) => {
             { text: 'Контакты' },
             { text: 'FAQ' },
           ]}
+          isAbsolute={isAbsolute}
         />
         <div
           className={classNames({

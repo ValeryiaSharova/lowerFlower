@@ -22,3 +22,8 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.absolute {
+  position: absolute;
+  z-index: 3;
+}
