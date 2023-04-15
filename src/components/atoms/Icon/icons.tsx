@@ -8,6 +8,7 @@ export { ReactComponent as phone } from 'src/assets/icons/phone.svg';
 export { ReactComponent as instagram } from 'src/assets/icons/inst.svg';
 export { ReactComponent as whatsUp } from 'src/assets/icons/whatsUp.svg';
 export { ReactComponent as mobile } from 'src/assets/icons/mobile.svg';
+export { ReactComponent as arrow } from 'src/assets/icons/Arrow.svg';
 
 export const iconsAnt = {
   loadingOutlined: LoadingOutlined,
