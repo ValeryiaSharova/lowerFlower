@@ -12,6 +12,6 @@ export default {
 export const Link: Story<Props> = (args) => <LinkComponent {...args} />;
 
 Link.args = {
-  text: 'Главная',
-  type: 'default',
+  color: '#D978AC',
+  text: 'test',
 };
