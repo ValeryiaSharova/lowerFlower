@@ -7,16 +7,20 @@
   --color-black: #040a0a;
   --color-black2: #212121;
   --color-black3: #00000033;
+  --color-black4: #0a1717;
   --color-grey: #555555;
   --color-grey2: #7c7c7c;
+  --color-grey3: #939393;
   --color-white: #ffffff;
 
   --color-darkGreen: #01281f;
   --color-highlightGreen: #249479;
   --color-green: #43ffd2;
+  --color-green2: #31985a;
 
   --color-darkPurple: #1b000e;
   --color-purple: #7d2253;
+  --color-purple2: #6b535f;
   --color-pink: #d978ac;
 
   --color-red: #ff3a44;
@@ -30,6 +34,10 @@
 
   /* FONT SIZE */
 
+  --font-size200: 200px;
+  --font-size30: 30px;
+  --font-size20: 20px;
+  --font-size18: 18px;
   --font-size14: 14px;
   --fontSize-12: 12px;
   --fontSize-10: 10px;
