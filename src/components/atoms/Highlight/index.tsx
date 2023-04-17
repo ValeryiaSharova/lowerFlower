@@ -12,6 +12,7 @@ export type Props = {
   top?: number;
   left?: number;
   right?: number;
+  zIndex?: number;
 };
 
 const colorStyles: Record<Props['color'], string> = {
@@ -29,6 +30,7 @@ export const Highlight: React.FC<Props> = ({
   top,
   left,
   right,
+  zIndex,
 }) => {
   const style: React.CSSProperties = {
     width,
@@ -39,6 +41,7 @@ export const Highlight: React.FC<Props> = ({
     top,
     left,
     right,
+    zIndex,
   };
 
   return <div className={colorStyles[color]} style={style} />;

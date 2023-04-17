@@ -1,7 +1,10 @@
-.label {
+.container {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+}
+
+.label {
   font-weight: var(--fontWeight-400);
   font-size: var(--font-size14);
   line-height: 1.313rem;
@@ -60,4 +63,14 @@
   display: flex;
   gap: 0.625rem;
   align-items: center;
+}
+
+.color,
+.color:active,
+.color:focus {
+  border: 1px solid var(--color-green);
+}
+
+.color::placeholder {
+  color: var(--color-darkGreen2);
 }
