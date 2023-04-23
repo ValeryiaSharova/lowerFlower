@@ -24,7 +24,9 @@ export const Header: React.FC<Props> = ({ isFixed, isAbsolute = false }) => {
         [styles.absolute]: isAbsolute,
       })}
     >
-      <Logo logo="logo" size="m" />
+      <div className={styles.logo}>
+        <Logo logo="logo" size="m" />
+      </div>
       <div className={styles.container}>
         <Menu
           links={[
@@ -64,6 +66,11 @@ export const Header: React.FC<Props> = ({ isFixed, isAbsolute = false }) => {
           )}
         </div>
         {isFixed && <Cart count={5} />}
+      </div>
+      <div className={styles.burger} role="button">
+        <div className={styles.burgerItem} />
+        <div className={styles.burgerItem} />
+        <div className={styles.burgerItem} />
       </div>
     </div>
   );

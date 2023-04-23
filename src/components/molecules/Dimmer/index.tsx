@@ -13,7 +13,7 @@ export const Dimmer: React.FC<Props> = ({
   children,
   padding,
   borderRadius,
-  width = 'fit-content',
+  width = '100%',
 }) => (
   <div className={styles.wrapper} style={{ padding, borderRadius, width }}>
     {children}

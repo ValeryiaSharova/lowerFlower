@@ -7,3 +7,10 @@
   text-transform: uppercase;
   color: var(--color-white);
 }
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    font-size: 3.75rem;
+    line-height: 3rem;
+  }
+}

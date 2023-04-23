@@ -74,3 +74,33 @@
   padding-top: 1.25rem;
   float: right;
 }
+
+@media screen and (max-width: 1460px) {
+  .container {
+    right: 6.25rem;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .infoWrapper {
+    display: none;
+  }
+
+  .iconContainer {
+    display: none;
+  }
+
+  .call {
+    display: none;
+  }
+
+  .cart {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .container {
+    right: 3.125rem;
+  }
+}
