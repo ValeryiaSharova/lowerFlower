@@ -1,0 +1,144 @@
+.infoWrapper {
+  position: relative;
+  margin-bottom: 43.75rem;
+}
+
+.infoTitle {
+  margin: 3.75rem 0 0 10.313rem;
+}
+
+.text {
+  clear: both;
+}
+
+.infoWrapperText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  max-width: 33.75rem;
+  margin-left: 16.25rem;
+  padding-top: 2.188rem;
+  font-weight: var(--fontWeight-300);
+  font-size: var(--font-size20);
+  line-height: 1.625rem;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+}
+
+.cardCatalogWrapper {
+  position: relative;
+  margin: 0 10.313rem;
+}
+
+.firstCardCatalog {
+  position: absolute;
+  right: 0;
+  top: -6.25rem;
+  width: 27.813rem;
+}
+
+.secondCardCatalog {
+  position: absolute;
+  top: 7.5rem;
+  width: 33.75rem;
+}
+
+.thirdCardCatalog {
+  position: absolute;
+  right: 0;
+  top: 13.75rem;
+  width: 33.75rem;
+}
+
+@media screen and (max-width: 1460px) {
+  .infoTitle {
+    margin: 3.75rem 0 0 6.25rem;
+  }
+
+  .infoWrapperText {
+    margin-left: 11.25rem;
+  }
+
+  .cardCatalogWrapper {
+    margin: 0 6.25rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .text {
+    display: none;
+  }
+
+  .infoWrapper {
+    margin-bottom: 10rem;
+  }
+
+  .infoWrapperText {
+    margin-left: 6.25rem;
+  }
+
+  .cardCatalogWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .firstCardCatalog {
+    width: 60%;
+    position: relative;
+    top: 0;
+  }
+
+  .secondCardCatalog {
+    width: 60%;
+    position: relative;
+    top: 0;
+  }
+
+  .thirdCardCatalog {
+    width: 60%;
+    position: relative;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .infoTitle {
+    margin: 3.75rem 0 0 3.125rem;
+  }
+
+  .cardCatalogWrapper {
+    margin: 0 3.125rem;
+    margin-top: 1.5rem;
+  }
+
+  .infoWrapperText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1.875rem;
+    margin: auto;
+    padding-top: 2.188rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .firstCardCatalog {
+    width: 90%;
+  }
+
+  .secondCardCatalog {
+    width: 90%;
+  }
+
+  .thirdCardCatalog {
+    width: 90%;
+  }
+
+  .infoWrapperText span {
+    text-align: center;
+  }
+}
