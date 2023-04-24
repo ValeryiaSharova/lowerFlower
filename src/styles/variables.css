@@ -15,6 +15,7 @@
 
   --color-darkGreen: #01281f;
   --color-darkGreen2: #395959;
+  --color-darkGreen3: #0f2222;
   --color-highlightGreen: #249479;
   --color-green: #43ffd2;
   --color-green2: #31985a;
@@ -36,6 +37,7 @@
   /* FONT SIZE */
 
   --font-size200: 200px;
+  --font-size150: 150px;
   --font-size100: 100px;
   --font-size30: 30px;
   --font-size20: 20px;
@@ -43,6 +45,10 @@
   --font-size14: 14px;
   --fontSize-12: 12px;
   --fontSize-10: 10px;
+
+  /* FONT FAMILY */
+
+  --fontFamily-Cormorant: 'Cormorant';
 
   /* TRANSITION */
 
