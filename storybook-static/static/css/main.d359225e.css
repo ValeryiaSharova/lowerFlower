@@ -853,6 +853,13 @@ a {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .styles_wrapper__aEu1n {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
 .styles_wrapper__SgSli {
   background-color: transparent;
   border: none;
@@ -1572,4 +1579,4 @@ a {
 }
 
 
-/*# sourceMappingURL=main.99d351ab.css.map*/
+/*# sourceMappingURL=main.d359225e.css.map*/
