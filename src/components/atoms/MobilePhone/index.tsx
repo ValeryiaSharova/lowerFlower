@@ -9,6 +9,7 @@ export type Props = {
   isIcon?: boolean;
   phone: string;
   size: 14 | 16;
+  style: 'default' | 'underline';
 };
 
 const sizeStyles: Record<Props['size'], string> = {
@@ -16,9 +17,21 @@ const sizeStyles: Record<Props['size'], string> = {
   '16': styles.size16,
 };
 
-export const MobilePhone: React.FC<Props> = ({ isIcon, phone, size }) => (
+const styleToStyles: Record<Props['style'], string> = {
+  default: styles.phone,
+  underline: styles.phoneUnderline,
+};
+
+export const MobilePhone: React.FC<Props> = ({
+  isIcon,
+  phone,
+  size,
+  style = 'default',
+}) => (
   <div className={styles.wrapper}>
     {isIcon && <Icon icon="phone" color="var(--color-green)" size={18} />}
-    <span className={classNames(styles.phone, sizeStyles[size])}>{phone}</span>
+    <span className={classNames(styleToStyles[style], sizeStyles[size])}>
+      {phone}
+    </span>
   </div>
 );

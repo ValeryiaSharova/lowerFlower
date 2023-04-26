@@ -35,7 +35,12 @@ export const ContactInfo = () => (
       </Dimmer>
     </div>
     <div className={styles.call}>
-      <MobilePhone phone="+375 (29) 113-69-69" size={16} isIcon={false} />
+      <MobilePhone
+        phone="+375 (29) 113-69-69"
+        size={16}
+        isIcon={false}
+        style="default"
+      />
       <Dimmer borderRadius={10} padding="0.625rem 1.25rem">
         <div className={styles.callText}>
           <Icon icon="phone" size={16} color="var(--color-green)" />
