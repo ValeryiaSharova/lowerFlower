@@ -11,6 +11,7 @@
     color var(--transition-035s);
   border: 1px solid transparent;
   position: relative;
+  width: fit-content;
 }
 
 .color {
@@ -49,7 +50,7 @@
 
 .black {
   border: 1px solid var(--color-white);
-  background-color: var(--color-black);
+  background-color: transparent;
   color: var(--color-white);
 }
 

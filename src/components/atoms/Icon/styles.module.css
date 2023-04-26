@@ -50,3 +50,13 @@
   min-height: 30px;
   font-size: 30px;
 }
+
+.size40 {
+  width: 40px;
+  min-width: 40px;
+}
+
+.size80 {
+  width: 80px;
+  min-width: 80px;
+}

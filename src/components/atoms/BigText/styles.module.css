@@ -1,0 +1,8 @@
+.text {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size200);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-black4);
+  clear: both;
+}

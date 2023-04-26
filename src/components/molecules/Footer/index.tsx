@@ -1,8 +1,8 @@
 import classNames from 'classnames';
 
 import { Icon } from 'src/components/atoms/Icon';
-import { Link } from 'src/components/atoms/Link';
 import { Logo } from 'src/components/atoms/Logo';
+import { MenuLink } from 'src/components/atoms/MenuLink';
 
 import styles from 'src/components/molecules/Footer/styles.module.css';
 
@@ -51,24 +51,24 @@ export const Footer = () => (
       </div>
     </div>
     <div className={styles.wrapper}>
-      <Link text="Каталог" type="color" />
+      <MenuLink text="Каталог" type="color" />
       <div className={styles.wrapperLinks}>
         {catalogLinks.map((link) => (
-          <Link text={link} type="footer" key={link} />
+          <MenuLink text={link} type="footer" key={link} />
         ))}
       </div>
     </div>
     <div className={styles.wrapper}>
-      <Link text="Букет" type="color" />
+      <MenuLink text="Букет" type="color" />
       <div className={styles.wrapperLinks}>
         {bouquetLinks.map((link) => (
-          <Link text={link} type="footer" key={link} />
+          <MenuLink text={link} type="footer" key={link} />
         ))}
       </div>
     </div>
     <div className={styles.wrapperMenuLinks}>
       {menuLinks.map((link) => (
-        <Link text={link} type="color" key={link} />
+        <MenuLink text={link} type="color" key={link} />
       ))}
     </div>
     <div className={styles.contacts}>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+import { Footer } from 'src/components/molecules/Footer';
 import { About } from 'src/components/pages/About';
 import { Card } from 'src/components/pages/Card';
 import { Catalog } from 'src/components/pages/Catalog';
@@ -33,5 +34,6 @@ export const App: React.FC = () => (
         <Route path="/success" element={<Success />} />
       </Routes>
     </BrowserRouter>
+    <Footer />
   </Provider>
 );

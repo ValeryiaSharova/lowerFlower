@@ -20,7 +20,6 @@ Highlight.args = {
   blur: 125,
   color: 'pink',
   height: 211,
-  radius: 45,
   rotate: -43,
   width: 472,
 };

@@ -1,0 +1,26 @@
+.wrapper {
+  font-weight: var(--fontWeight-300);
+  font-size: var(--font-size20);
+  line-height: 1.875rem;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new {
+  background: var(--color-pink);
+}
+
+.sale {
+  background: var(--color-green2);
+}
+
+.absolute {
+  position: absolute;
+}

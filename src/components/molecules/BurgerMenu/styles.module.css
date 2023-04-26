@@ -1,0 +1,62 @@
+.wrapper :global .MuiDrawer-paper {
+  background: var(--color-totalBlack);
+  width: 80%;
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.divider {
+  border: 1px solid var(--color-grey);
+  width: 40%;
+  margin-bottom: 0.625rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoTitle {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.infoDescription {
+  font-weight: var(--fontWeight-300);
+  font-size: var(--font-size10);
+  line-height: 0.938rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.confident {
+  display: flex;
+  flex-direction: column;
+}
+
+.confident span {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size10);
+  line-height: 0.938rem;
+  letter-spacing: 0.04em;
+  color: var(--color-grey);
+}
+
+.contacts {
+  margin-top: 0.625rem;
+  display: flex;
+  gap: 1.25rem;
+}

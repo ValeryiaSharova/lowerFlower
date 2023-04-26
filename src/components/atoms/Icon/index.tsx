@@ -10,7 +10,7 @@ type IconType = keyof typeof icons;
 
 type ExportedIconsType = Exclude<IconType, 'iconsAnt'>;
 
-type IconSizeType = 16 | 18 | 24 | 30;
+type IconSizeType = 16 | 18 | 24 | 30 | 40 | 80;
 
 export type Props = {
   icon: ExportedIconsType | AntIconType;
@@ -23,6 +23,8 @@ const iconSize: Record<IconSizeType, string> = {
   18: styles.size18,
   24: styles.size24,
   30: styles.size30,
+  40: styles.size40,
+  80: styles.size80,
 };
 
 export const Icon: React.FC<Props> = ({
