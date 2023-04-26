@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 import { Logo } from 'src/components/atoms/Logo';
 import { MobilePhone } from 'src/components/atoms/MobilePhone';
+import { BurgerMenu } from 'src/components/molecules/BurgerMenu';
 import { Cart } from 'src/components/molecules/Cart';
 import { Menu } from 'src/components/organisms/Menu';
 import { Search } from 'src/components/organisms/Search';
@@ -16,6 +17,7 @@ export type Props = {
 
 export const Header: React.FC<Props> = ({ isFixed, isAbsolute = false }) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div
@@ -72,11 +74,16 @@ export const Header: React.FC<Props> = ({ isFixed, isAbsolute = false }) => {
         </div>
         {isFixed && <Cart count={5} />}
       </div>
-      <div className={styles.burger} role="button">
+      <div
+        className={styles.burger}
+        role="button"
+        onClick={() => setIsOpen(!isOpen)}
+      >
         <div className={styles.burgerItem} />
         <div className={styles.burgerItem} />
         <div className={styles.burgerItem} />
       </div>
+      <BurgerMenu isOpen={isOpen} handleClose={() => setIsOpen(!isOpen)} />
     </div>
   );
 };
