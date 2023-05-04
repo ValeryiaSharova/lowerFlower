@@ -41,7 +41,7 @@ export const ContactInfo = () => (
         isIcon={false}
         style="default"
       />
-      <Dimmer borderRadius={10} padding="0.625rem 1.25rem">
+      <Dimmer borderRadius={10} padding="0.625rem 1.25rem" width="fit-content">
         <div className={styles.callText}>
           <Icon icon="phone" size={16} color="var(--color-green)" />
           <span>заказать звонок</span>

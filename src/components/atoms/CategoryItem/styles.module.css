@@ -13,5 +13,6 @@
 }
 
 .category:hover {
-  background-color: var(--color-purple);
+  color: var(--color-black);
+  background: var(--color-green);
 }
