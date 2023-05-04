@@ -1,0 +1,17 @@
+.category {
+  border: 0.5px solid var(--color-white);
+  border-radius: 2.5rem;
+  font-weight: var(--fontWeight-400);
+  font-size: var(--fontSize-12);
+  line-height: 1.125rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  width: fit-content;
+  padding: 0.688rem 1rem;
+  cursor: pointer;
+}
+
+.category:hover {
+  background-color: var(--color-purple);
+}
