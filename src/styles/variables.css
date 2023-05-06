@@ -65,6 +65,16 @@ html {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #43ffd2;
+  border-radius: 20px;
+  border: 1px solid #43ffd2;
+}
+
 body {
   --webkit-overflow-scrolling: touch;
   background-color: #040a0a;
