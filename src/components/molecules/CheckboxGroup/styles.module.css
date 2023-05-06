@@ -18,3 +18,8 @@
   flex-direction: column;
   gap: 0.313rem;
 }
+
+.scroll {
+  height: 6.875rem;
+  overflow: auto;
+}

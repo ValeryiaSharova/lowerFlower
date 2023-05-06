@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React from 'react';
 
 import { Checkbox } from 'src/components/atoms/Checkbox';
@@ -9,13 +10,21 @@ export type Props = {
   checkboxes: string[];
 };
 
-export const CheckboxGroup: React.FC<Props> = ({ title, checkboxes }) => (
-  <div className={styles.wrapper}>
-    <div className={styles.title}>{title}</div>
-    <div className={styles.container}>
-      {checkboxes.map((item) => (
-        <Checkbox label={item} key={item} />
-      ))}
+export const CheckboxGroup: React.FC<Props> = ({ title, checkboxes }) => {
+  const isScroll = checkboxes.length > 8;
+
+  return (
+    <div className={styles.wrapper}>
+      <div className={styles.title}>{title}</div>
+      <div
+        className={classNames(styles.container, {
+          [styles.scroll]: isScroll,
+        })}
+      >
+        {checkboxes.map((item) => (
+          <Checkbox label={item} key={item} />
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};

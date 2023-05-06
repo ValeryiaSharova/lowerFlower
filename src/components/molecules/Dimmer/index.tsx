@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React, { ReactNode } from 'react';
 
 import styles from 'src/components/molecules/Dimmer/styles.module.css';
@@ -7,6 +8,7 @@ export type Props = {
   padding?: number | string;
   borderRadius?: number;
   width?: number | string;
+  className?: string;
 };
 
 export const Dimmer: React.FC<Props> = ({
@@ -14,8 +16,12 @@ export const Dimmer: React.FC<Props> = ({
   padding,
   borderRadius,
   width = '100%',
+  className,
 }) => (
-  <div className={styles.wrapper} style={{ padding, borderRadius, width }}>
+  <div
+    className={classNames(styles.wrapper, className)}
+    style={{ padding, borderRadius, width }}
+  >
     {children}
   </div>
 );

@@ -12,6 +12,7 @@ export type Props = {
   top?: number;
   left?: number;
   right?: number;
+  bottom?: number;
   zIndex?: number;
 };
 
@@ -31,6 +32,7 @@ export const Highlight: React.FC<Props> = ({
   left,
   right,
   zIndex,
+  bottom,
 }) => {
   const style: React.CSSProperties = {
     width,
@@ -41,6 +43,7 @@ export const Highlight: React.FC<Props> = ({
     top,
     left,
     right,
+    bottom,
     zIndex,
   };
 

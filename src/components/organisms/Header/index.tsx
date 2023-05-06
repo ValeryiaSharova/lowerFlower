@@ -11,11 +11,14 @@ import { Search } from 'src/components/organisms/Search';
 import styles from 'src/components/organisms/Header/styles.module.css';
 
 export type Props = {
-  isFixed: boolean;
+  isFixed?: boolean;
   isAbsolute?: boolean;
 };
 
-export const Header: React.FC<Props> = ({ isFixed, isAbsolute = false }) => {
+export const Header: React.FC<Props> = ({
+  isFixed = false,
+  isAbsolute = false,
+}) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
