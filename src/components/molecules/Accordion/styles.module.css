@@ -1,0 +1,36 @@
+.open {
+  display: block;
+  padding-top: 1.25rem;
+}
+
+.close {
+  display: none;
+}
+
+.openTitle {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size16);
+  line-height: 1.5rem;
+  letter-spacing: 0.1em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: var(--color-green);
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.closeTitle {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size16);
+  line-height: 1.5rem;
+  letter-spacing: 0.1em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: var(--color-pink);
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  cursor: pointer;
+}
