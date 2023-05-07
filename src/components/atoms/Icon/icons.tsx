@@ -1,3 +1,5 @@
+import CaretDownOutlined from '@ant-design/icons/CaretDownOutlined';
+import CaretUpOutlined from '@ant-design/icons/CaretUpOutlined';
 import ExclamationOutlined from '@ant-design/icons/ExclamationOutlined';
 import LoadingOutlined from '@ant-design/icons/LoadingOutlined';
 
@@ -13,4 +15,6 @@ export { ReactComponent as arrow } from 'src/assets/icons/Arrow.svg';
 export const iconsAnt = {
   loadingOutlined: LoadingOutlined,
   exclamationOutlined: ExclamationOutlined,
+  caretUpOutlined: CaretUpOutlined,
+  caretDownOutlined: CaretDownOutlined,
 } as const;
