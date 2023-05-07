@@ -42,6 +42,7 @@
   --font-size30: 30px;
   --font-size20: 20px;
   --font-size18: 18px;
+  --font-size16: 16px;
   --font-size14: 14px;
   --fontSize-12: 12px;
   --fontSize-10: 10px;
@@ -63,6 +64,16 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #43ffd2;
+  border-radius: 20px;
+  border: 1px solid #43ffd2;
 }
 
 body {

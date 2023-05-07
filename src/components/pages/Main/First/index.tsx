@@ -9,7 +9,7 @@ import styles from 'src/components/pages/Main/First/styles.module.css';
 
 export const First = () => (
   <div className={styles.wrapper}>
-    <Header isFixed={false} isAbsolute />
+    <Header isAbsolute />
     <ContactInfo />
     <div className={classNames(styles.main, styles.padding)}>lover</div>
     <div className={styles.flower} />
