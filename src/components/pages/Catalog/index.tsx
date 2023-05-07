@@ -1,13 +1,12 @@
 import { Breadcrumbs } from 'src/components/atoms/Breadcrumbs';
-import { CategoryItem } from 'src/components/atoms/CategoryItem';
 import { ContactInfo } from 'src/components/atoms/ContactInfo';
 import { Highlight } from 'src/components/atoms/Highlight';
 import { Title } from 'src/components/atoms/Title';
-import { Button } from 'src/components/molecules/Button';
-import { CheckboxGroup } from 'src/components/molecules/CheckboxGroup';
+import { Accordion } from 'src/components/molecules/Accordion';
 import { Dimmer } from 'src/components/molecules/Dimmer';
 import { ItemCard } from 'src/components/molecules/ItemCard';
-import { Slider } from 'src/components/molecules/Slider';
+import { Categories } from 'src/components/organisms/Categories';
+import { Filters } from 'src/components/organisms/Filters';
 import { Header } from 'src/components/organisms/Header';
 import {
   categories,
@@ -35,42 +34,33 @@ export const Catalog = () => (
           { content: 'каталог', link: '/catalog' },
         ]}
       />
-      <Dimmer padding={20} width="85%" borderRadius={20}>
+      <Dimmer
+        padding={20}
+        borderRadius={20}
+        className={styles.catalogDescription}
+      >
         <Title title="каталог" />
         <Title title="букетов" className={styles.titlePadding} />
         <div className={styles.description}>
           В нашем магазине самый большой выбор букетов для любых событий:
         </div>
-        <div className={styles.categoriesWrapper}>
-          {categories.map((item) => (
-            <CategoryItem text={item} />
-          ))}
+        <div className={styles.categories}>
+          <Categories listOfCategories={categories} />
         </div>
       </Dimmer>
     </div>
+    <div className={styles.filtersAndCategories}>
+      <Accordion title="фильтр товаров">
+        <Filters listOfItems={listOfCategories} />
+      </Accordion>
+      <Accordion title="Категории">
+        <Categories listOfCategories={categories} />
+      </Accordion>
+    </div>
     <div className={styles.itemsContainer}>
-      <Dimmer
-        borderRadius={20}
-        width="15.938rem"
-        padding="1.25rem 1rem"
-        className={styles.listOfCategories}
-      >
-        {listOfCategories.map((item) => (
-          <CheckboxGroup
-            checkboxes={item.checkboxes}
-            title={item.title}
-            key={item.title}
-          />
-        ))}
-        <Slider
-          description="цена"
-          maxValue={500}
-          minValue={3}
-          title="стоимость"
-          unit="руб."
-        />
-        <Button style="black" text="Сбросить фильтр" />
-      </Dimmer>
+      <div className={styles.filters}>
+        <Filters listOfItems={listOfCategories} />
+      </div>
       <div className={styles.items}>
         {items.map((item) => (
           <ItemCard {...item} />
