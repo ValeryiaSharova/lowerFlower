@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import { Footer } from 'src/components/molecules/Footer';
 import { About } from 'src/components/pages/About';
@@ -18,22 +18,20 @@ import { Provider } from 'src/components/providers/Provider';
 
 export const App: React.FC = () => (
   <Provider>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/card" element={<Card />} />
-        <Route path="/catalog" element={<Catalog />} />
-        <Route path="/contacts" element={<Contacts />} />
-        <Route path="/corp" element={<CorpClients />} />
-        <Route path="/delivery" element={<Delivery />} />
-        <Route path="/error" element={<Error />} />
-        <Route path="/faq" element={<FAQ />} />
-        <Route path="/" index element={<Main />} />
-        <Route path="/404" element={<NotFound />} />
-        <Route path="/order" element={<Order />} />
-        <Route path="/success" element={<Success />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/about" element={<About />} />
+      <Route path="/card" element={<Card />} />
+      <Route path="/catalog" element={<Catalog />} />
+      <Route path="/contacts" element={<Contacts />} />
+      <Route path="/corp" element={<CorpClients />} />
+      <Route path="/delivery" element={<Delivery />} />
+      <Route path="/error" element={<Error />} />
+      <Route path="/faq" element={<FAQ />} />
+      <Route path="/" index element={<Main />} />
+      <Route path="/404" element={<NotFound />} />
+      <Route path="/order" element={<Order />} />
+      <Route path="/success" element={<Success />} />
+    </Routes>
     <Footer />
   </Provider>
 );

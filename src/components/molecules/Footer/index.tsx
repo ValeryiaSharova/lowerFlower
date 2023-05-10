@@ -3,40 +3,41 @@ import classNames from 'classnames';
 import { Icon } from 'src/components/atoms/Icon';
 import { Logo } from 'src/components/atoms/Logo';
 import { MenuLink } from 'src/components/atoms/MenuLink';
+import { Props as MenuProps } from 'src/components/organisms/Menu';
 
 import styles from 'src/components/molecules/Footer/styles.module.css';
 
-const catalogLinks = [
-  'Популярное',
-  'Сухоцветы',
-  'Букеты роз',
-  'Композиции из цветов',
-  'Индивидуальный букет',
-  'Букет на праздник',
-  'Упаковка подарков',
-  'Шары',
-  'Открытки',
-  'Конверты',
+const catalogLinks: MenuProps['links'] = [
+  { text: 'Популярное', link: '/404' },
+  { text: 'Сухоцветы', link: '/404' },
+  { text: 'Букеты роз', link: '/404' },
+  { text: 'Композиции из цветов', link: '/404' },
+  { text: 'Индивидуальный букет', link: '/404' },
+  { text: 'Букет на праздник', link: '/404' },
+  { text: 'Упаковка подарков', link: '/404' },
+  { text: 'Шары', link: '/404' },
+  { text: 'Открытки', link: '/404' },
+  { text: 'Конверты', link: '/404' },
 ];
 
-const bouquetLinks = [
-  'Для девушки',
-  'Для мужчины',
-  'Для жены',
-  'Для мамы',
-  'Для коллеги',
-  'Для начальника',
-  'Для дочки',
-  'Для детей',
-  'Для женщины',
+const bouquetLinks: MenuProps['links'] = [
+  { text: 'Для девушки', link: '/404' },
+  { text: 'Для мужчины', link: '/404' },
+  { text: 'Для жены', link: '/404' },
+  { text: 'Для мамы', link: '/404' },
+  { text: 'Для коллеги', link: '/404' },
+  { text: 'Для начальника', link: '/404' },
+  { text: 'Для дочки', link: '/404' },
+  { text: 'Для детей', link: '/404' },
+  { text: 'Для женщины', link: '/404' },
 ];
 
-const menuLinks = [
-  'Доставка и оплата',
-  'О нас',
-  'FAQ',
-  'Контакты',
-  'для корпоративных клиентов',
+const menuLinks: MenuProps['links'] = [
+  { text: 'Доставка и оплата', link: '/delivery' },
+  { text: 'О нас', link: '/about' },
+  { text: 'FAQ', link: '/faq' },
+  { text: 'Контакты', link: '/contacts' },
+  { text: 'для корпоративных клиентов', link: '/corp' },
 ];
 
 export const Footer = () => (
@@ -51,24 +52,24 @@ export const Footer = () => (
       </div>
     </div>
     <div className={styles.wrapper}>
-      <MenuLink text="Каталог" type="color" />
+      <MenuLink text="Каталог" type="color" link="/catalog" />
       <div className={styles.wrapperLinks}>
         {catalogLinks.map((link) => (
-          <MenuLink text={link} type="footer" key={link} />
+          <MenuLink type="footer" key={link.text} {...link} />
         ))}
       </div>
     </div>
     <div className={styles.wrapper}>
-      <MenuLink text="Букет" type="color" />
+      <MenuLink text="Букет" type="color" link="/404" />
       <div className={styles.wrapperLinks}>
         {bouquetLinks.map((link) => (
-          <MenuLink text={link} type="footer" key={link} />
+          <MenuLink type="footer" key={link.text} {...link} />
         ))}
       </div>
     </div>
     <div className={styles.wrapperMenuLinks}>
       {menuLinks.map((link) => (
-        <MenuLink text={link} type="color" key={link} />
+        <MenuLink type="color" key={link.text} {...link} />
       ))}
     </div>
     <div className={styles.contacts}>

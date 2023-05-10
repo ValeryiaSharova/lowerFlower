@@ -6,6 +6,7 @@ import { Logo } from 'src/components/atoms/Logo';
 import { MenuLink } from 'src/components/atoms/MenuLink';
 import { MobilePhone } from 'src/components/atoms/MobilePhone';
 import { IconButton } from 'src/components/molecules/IconButton';
+import { Props as MenuProps } from 'src/components/organisms/Menu';
 import { Search } from 'src/components/organisms/Search';
 
 import styles from 'src/components/molecules/BurgerMenu/styles.module.css';
@@ -15,14 +16,14 @@ export type Props = {
   handleClose: () => void;
 };
 
-const links = [
-  'Главная',
-  'Каталог',
-  'Доставка и оплата',
-  'О нас',
-  'Контакты',
-  'FAQ',
-  'для корпоративных клиентов',
+const links: MenuProps['links'] = [
+  { text: 'Главная', link: '/' },
+  { text: 'Каталог', link: '/catalog' },
+  { text: 'Доставка и оплата', link: '/delivery' },
+  { text: 'О нас', link: '/about' },
+  { text: 'Контакты', link: '/contacts' },
+  { text: 'FAQ', link: '/faq' },
+  { text: 'для корпоративных клиентов', link: '/corp' },
 ];
 
 export const BurgerMenu: React.FC<Props> = ({ isOpen, handleClose }) => {
@@ -47,7 +48,7 @@ export const BurgerMenu: React.FC<Props> = ({ isOpen, handleClose }) => {
         </div>
         <Search isVisible={isVisible} setIsVisible={setIsVisible} />
         {links.map((link, index) => (
-          <MenuLink text={link} type="default" key={index} />
+          <MenuLink type="default" key={index} {...link} />
         ))}
         <div className={styles.divider} />
         <div className={styles.info}>

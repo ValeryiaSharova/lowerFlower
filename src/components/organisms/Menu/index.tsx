@@ -1,11 +1,14 @@
 import React from 'react';
 
-import { MenuLink } from 'src/components/atoms/MenuLink';
+import {
+  MenuLink,
+  Props as MenuLinkProps,
+} from 'src/components/atoms/MenuLink';
 
 import styles from 'src/components/organisms/Menu/styles.module.css';
 
 export type Props = {
-  links: { text: string; items?: string[] }[];
+  links: { text: string; items?: MenuLinkProps['items']; link: string }[];
   isAbsolute?: boolean;
 };
 
@@ -15,9 +18,8 @@ export const Menu: React.FC<Props> = ({ links, isAbsolute = false }) => (
       <MenuLink
         key={link.text + index}
         type="default"
-        text={link.text}
-        items={link.items}
         isAbsolute={isAbsolute}
+        {...link}
       />
     ))}
   </div>

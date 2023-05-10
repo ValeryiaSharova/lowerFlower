@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { Logo } from 'src/components/atoms/Logo';
 import { MobilePhone } from 'src/components/atoms/MobilePhone';
@@ -30,7 +31,9 @@ export const Header: React.FC<Props> = ({
       })}
     >
       <div className={styles.logo}>
-        <Logo logo="logo" size="m" />
+        <Link to="/">
+          <Logo logo="logo" size="m" />
+        </Link>
       </div>
       <div className={styles.container}>
         <Menu
@@ -38,24 +41,25 @@ export const Header: React.FC<Props> = ({
             {
               text: 'Каталог',
               items: [
-                'Популярное',
-                'Сборны букеты',
-                'монобукеты',
-                'розы',
-                'свадебные',
-                'Композиции из цветов к коробке',
-                'интерьерные композиции',
-                'осенние',
-                'индивидуальный букет',
-                'сухоцветы',
-                'горшечные',
-                'дополнительно',
+                { text: 'Популярное', link: '/404' },
+                { text: 'Сборны букеты', link: '/404' },
+                { text: 'монобукеты', link: '/404' },
+                { text: 'розы', link: '/404' },
+                { text: 'свадебные', link: '/404' },
+                { text: 'Композиции из цветов к коробке', link: '/404' },
+                { text: 'интерьерные композиции', link: '/404' },
+                { text: 'осенние', link: '/404' },
+                { text: 'индивидуальный букет', link: '/404' },
+                { text: 'сухоцветы', link: '/404' },
+                { text: 'горшечные', link: '/404' },
+                { text: 'дополнительно', link: '/404' },
               ],
+              link: '/catalog',
             },
-            { text: 'Доставка и оплата' },
-            { text: 'О нас' },
-            { text: 'Контакты' },
-            { text: 'FAQ' },
+            { text: 'Доставка и оплата', link: '/delivery' },
+            { text: 'О нас', link: '/about' },
+            { text: 'Контакты', link: '/contacts' },
+            { text: 'FAQ', link: '/faq' },
           ]}
           isAbsolute={isAbsolute}
         />

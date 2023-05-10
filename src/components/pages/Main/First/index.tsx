@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 
 import { ContactInfo } from 'src/components/atoms/ContactInfo';
 import { Highlight } from 'src/components/atoms/Highlight';
@@ -16,7 +17,9 @@ export const First = () => (
     <div className={classNames(styles.main, styles.zIndex)}>flower</div>
     <div className={styles.container}>
       <span>Создаём для тех, кто ценит свежесть и изящество цветка</span>
-      <Button style="color" text="смотреть каталог" />
+      <Link to="/catalog">
+        <Button style="color" text="смотреть каталог" />
+      </Link>
     </div>
     <Highlight
       blur={125}
