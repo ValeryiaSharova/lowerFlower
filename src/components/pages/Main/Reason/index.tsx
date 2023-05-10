@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { Highlight } from 'src/components/atoms/Highlight';
 import { Title } from 'src/components/atoms/Title';
 import { Button } from 'src/components/molecules/Button';
@@ -52,7 +54,9 @@ export const Reason = () => (
       />
     </div>
     <div className={styles.reasonButton}>
-      <Button style="color" text="собрать индивидуальный букет" />
+      <Link to="/404">
+        <Button style="color" text="собрать индивидуальный букет" />
+      </Link>
     </div>
   </div>
 );

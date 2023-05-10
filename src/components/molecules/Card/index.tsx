@@ -43,7 +43,7 @@ const CatalogCard: React.FC<CatalogCardType> = ({ list, title, width }) => (
         <li key={item}>{item}</li>
       ))}
     </ul>
-    <Link text="смотреть каталог" color="var(--color-green)" />
+    <Link text="смотреть каталог" color="var(--color-green)" src="/catalog" />
   </Dimmer>
 );
 

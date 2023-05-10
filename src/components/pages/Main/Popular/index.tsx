@@ -74,7 +74,11 @@ export const Popular = () => (
     </div>
 
     <div className={styles.linkWrapper}>
-      <Link text="смотреть весь каталог" color="var(--color-pink)" />
+      <Link
+        text="смотреть весь каталог"
+        color="var(--color-pink)"
+        src="/catalog"
+      />
       <Arrow size="small" color="var(--color-pink)" />
     </div>
   </div>

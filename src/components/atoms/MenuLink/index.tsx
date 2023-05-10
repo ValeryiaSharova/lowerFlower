@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { DropDownMenu } from 'src/components/molecules/DropDownMenu';
 
@@ -7,7 +8,8 @@ import styles from 'src/components/atoms/MenuLink/styles.module.css';
 export type Props = {
   type: 'default' | 'footer' | 'color';
   text: string;
-  items?: string[];
+  items?: { text: string; link: string }[];
+  link: string;
   isAbsolute?: boolean;
 };
 
@@ -22,6 +24,7 @@ export const MenuLink: React.FC<Props> = ({
   text,
   items,
   isAbsolute,
+  link,
 }) => {
   const [dropDown, setDropDown] = useState(false);
 
@@ -32,10 +35,14 @@ export const MenuLink: React.FC<Props> = ({
       onMouseLeave={() => setDropDown(false)}
       role="menuitem"
     >
-      <span className={stylesTypes[type]}>{text}</span>
+      <Link to={link}>
+        <span className={stylesTypes[type]}>{text}</span>
+      </Link>
       {dropDown && <DropDownMenu items={items} isAbsolute={isAbsolute} />}
     </div>
   ) : (
-    <span className={stylesTypes[type]}>{text}</span>
+    <Link to={link}>
+      <span className={stylesTypes[type]}>{text}</span>
+    </Link>
   );
 };
