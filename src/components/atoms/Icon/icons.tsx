@@ -11,6 +11,7 @@ export { ReactComponent as instagram } from 'src/assets/icons/inst.svg';
 export { ReactComponent as whatsUp } from 'src/assets/icons/whatsUp.svg';
 export { ReactComponent as mobile } from 'src/assets/icons/mobile.svg';
 export { ReactComponent as arrow } from 'src/assets/icons/Arrow.svg';
+export { ReactComponent as chevronLeft } from 'src/assets/icons/chevron-left.svg';
 
 export const iconsAnt = {
   loadingOutlined: LoadingOutlined,
