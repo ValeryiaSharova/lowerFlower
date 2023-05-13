@@ -1,0 +1,39 @@
+.wrapper [class*='MuiTabsList-root'] {
+  display: flex;
+  width: 44.75rem;
+  border-bottom: 1px solid var(--color-grey);
+  margin-bottom: 3.75rem;
+}
+
+.wrapper [class*='MuiTabsList-root'] button {
+  padding-bottom: 1.875rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  font-weight: var(--fontWeight-300);
+  font-size: var(--font-size20);
+  line-height: 1.875rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-grey);
+  width: 50%;
+}
+
+.wrapper button[class*='Mui-selected'] {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size20);
+  line-height: 1.875rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.wrapper button[class*='Mui-selected']::after {
+  content: '';
+  position: absolute;
+  border-bottom: 3px solid var(--color-green);
+  left: 0;
+  bottom: -2.4px;
+  width: 100%;
+}
