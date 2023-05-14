@@ -1,0 +1,66 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.title {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size20);
+  line-height: 1.875rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-pink);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.list li {
+  font-weight: var(--fontWeight-300);
+  font-size: var(--font-size20);
+  line-height: 1.625rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  list-style: disc;
+  margin-left: 1.563rem;
+  max-width: 46.875rem;
+}
+
+.bold {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size20);
+  line-height: 1.625rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.green {
+  font-weight: var(--fontWeight-300);
+  font-size: var(--font-size20);
+  line-height: 1.625rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.wrapperText {
+  font-weight: var(--fontWeight-300);
+  font-size: var(--font-size20);
+  line-height: 1.875rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  max-width: 55rem;
+}
