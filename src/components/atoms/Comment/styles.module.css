@@ -1,0 +1,40 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.quote {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size30);
+  line-height: 2.75rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.text {
+  max-width: 33.75rem;
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size16);
+  line-height: 1.5rem;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+}
+
+.rating {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.rating label span {
+  color: var(--color-white);
+}
+
+.author {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.02em;
+  color: var(--color-grey);
+}

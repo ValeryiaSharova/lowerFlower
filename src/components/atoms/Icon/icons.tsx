@@ -2,6 +2,7 @@ import CaretDownOutlined from '@ant-design/icons/CaretDownOutlined';
 import CaretUpOutlined from '@ant-design/icons/CaretUpOutlined';
 import ExclamationOutlined from '@ant-design/icons/ExclamationOutlined';
 import LoadingOutlined from '@ant-design/icons/LoadingOutlined';
+import StarOutlined from '@ant-design/icons/StarOutlined';
 
 export { ReactComponent as search } from 'src/assets/icons/search.svg';
 export { ReactComponent as close } from 'src/assets/icons/close.svg';
@@ -18,4 +19,5 @@ export const iconsAnt = {
   exclamationOutlined: ExclamationOutlined,
   caretUpOutlined: CaretUpOutlined,
   caretDownOutlined: CaretDownOutlined,
+  starOutlined: StarOutlined,
 } as const;
