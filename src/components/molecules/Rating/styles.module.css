@@ -1,0 +1,8 @@
+.rating {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.rating label span {
+  color: var(--color-white);
+}

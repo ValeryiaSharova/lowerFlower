@@ -22,15 +22,6 @@
   color: var(--color-white);
 }
 
-.rating {
-  display: flex;
-  gap: 0.625rem;
-}
-
-.rating label span {
-  color: var(--color-white);
-}
-
 .author {
   font-weight: var(--fontWeight-400);
   font-size: var(--font-size14);
