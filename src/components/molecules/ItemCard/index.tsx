@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { Badge, Props as BadgeProps } from 'src/components/atoms/Badge';
 import { Button } from 'src/components/molecules/Button';
@@ -11,6 +12,7 @@ export type Props = {
   sale?: number;
   imageSrc: string;
   type?: BadgeProps['type'];
+  src?: string;
 };
 
 export const ItemCard: React.FC<Props> = ({
@@ -19,11 +21,19 @@ export const ItemCard: React.FC<Props> = ({
   title,
   imageSrc,
   type,
+  src,
 }) => (
   <div className={styles.wrapper}>
     {type && <Badge type={type} isAbsolute right={-10} top={-10} />}
     <img src={imageSrc} alt="itemCard" className={styles.cardImg} />
-    <span className={styles.title}>{title}</span>
+    {src ? (
+      <Link to={src}>
+        <span className={styles.title}>{title}</span>
+      </Link>
+    ) : (
+      <span className={styles.title}>{title}</span>
+    )}
+
     <div className={styles.priceWrapper}>
       <span className={styles.price}>{sale ? sale : price}&nbsp;р.</span>
       {sale && <span className={styles.sale}>{price}&nbsp;р.</span>}

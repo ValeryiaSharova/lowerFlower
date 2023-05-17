@@ -44,7 +44,7 @@ export const FullItemCard: React.FC<Props> = ({
               <span className={styles.sale}>{price} руб.</span>
             </div>
           ) : (
-            <span className={styles.price}>{price}</span>
+            <span className={styles.price}>{price} руб.</span>
           )}
         </div>
         <div className={styles.compoundContainer}>

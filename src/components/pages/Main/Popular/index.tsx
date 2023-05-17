@@ -1,11 +1,9 @@
 import { Arrow } from 'src/components/atoms/Arrow';
+import { Carousel } from 'src/components/atoms/Carousel';
 import { Highlight } from 'src/components/atoms/Highlight';
 import { Link } from 'src/components/atoms/Link';
 import { Title } from 'src/components/atoms/Title';
-import {
-  ItemCard,
-  Props as ItemCardProps,
-} from 'src/components/molecules/ItemCard';
+import { Props as ItemCardProps } from 'src/components/molecules/ItemCard';
 
 import background from 'src/assets/images/background.png';
 
@@ -61,17 +59,7 @@ export const Popular = () => (
       Самые любимые композиции наших клиентов
     </div>
 
-    <div className={styles.cardWrapper}>
-      <div className={styles.arrow}>
-        <Arrow size="big" color="var(--color-green)" rotate={-180} />
-      </div>
-      {itemCardData.map((item) => (
-        <ItemCard {...item} key={item.imageSrc} />
-      ))}
-      <div className={styles.arrow}>
-        <Arrow size="big" color="var(--color-green)" />
-      </div>
-    </div>
+    <Carousel itemCardData={itemCardData} />
 
     <div className={styles.linkWrapper}>
       <Link
