@@ -1,0 +1,94 @@
+.wrapper {
+  position: relative;
+}
+
+.container {
+  padding: 2.188rem 10.313rem 12.5rem;
+}
+
+.itemContainer {
+  margin-top: 3.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+.additionalWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.813rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.additionalTitle {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size20);
+  line-height: 1.875rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-pink);
+}
+
+.additionalCards {
+  display: flex;
+  gap: 1.875rem;
+}
+
+.tabContainer {
+  margin-top: 6.25rem;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  top: -9.375rem;
+  right: -10.313rem;
+  z-index: -1;
+}
+
+.carouselContainer {
+  margin-top: 12.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.563rem;
+}
+
+.carouselTitle {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size30);
+  line-height: 2.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+@media screen and (max-width: 1460px) {
+  .container {
+    padding: 2.188rem 6.25rem 12.5rem;
+  }
+
+  .image {
+    right: -6.25rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .additionalCards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .carouselContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .container {
+    padding: 2.188rem 3.125rem 12.5rem;
+  }
+
+  .image {
+    right: -3.125rem;
+  }
+}

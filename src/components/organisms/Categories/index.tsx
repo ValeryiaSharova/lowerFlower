@@ -11,7 +11,7 @@ export type Props = {
 export const Categories: React.FC<Props> = ({ listOfCategories }) => (
   <div className={styles.categoriesWrapper}>
     {listOfCategories.map((item) => (
-      <CategoryItem text={item} />
+      <CategoryItem text={item} key={item} />
     ))}
   </div>
 );

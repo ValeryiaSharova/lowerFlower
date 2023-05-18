@@ -1,0 +1,22 @@
+.cardWrapper {
+  display: flex;
+  gap: 1.875rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3.75rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cardWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

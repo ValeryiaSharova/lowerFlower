@@ -51,7 +51,7 @@
   background: var(--color-totalBlack);
   position: absolute;
   top: -0.938rem;
-  left: 50%;
+  left: calc(50% - 1rem);
 }
 
 .additionalTitle {

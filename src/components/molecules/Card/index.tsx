@@ -51,7 +51,7 @@ const AdditionalCard: React.FC<AdditionalCardType> = ({
   description,
   title,
 }) => (
-  <Dimmer borderRadius={20} padding="30px 16px">
+  <Dimmer borderRadius={20} padding="30px 16px" width={255}>
     <div className={styles.additionalCircle} />
     <div className={styles.additionalTitle}>{title}</div>
     <div className={styles.additionalDesc}>{description}</div>

@@ -62,8 +62,8 @@ export const Catalog = () => (
         <Filters listOfItems={listOfCategories} />
       </div>
       <div className={styles.items}>
-        {items.map((item) => (
-          <ItemCard {...item} />
+        {items.map((item, index) => (
+          <ItemCard {...item} key={index} src={`/card/${index}`} />
         ))}
       </div>
     </div>

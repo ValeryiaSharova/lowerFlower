@@ -1,0 +1,84 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.commentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.noComments {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+}
+
+.getComments {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-green);
+  margin-top: 2.5rem;
+}
+
+.commentsDescription {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+}
+
+.rateContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.rate {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 33.75rem;
+}
+
+.buttonContainer {
+  margin-top: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.confidenceText {
+  font-family: 'Roboto Condensed';
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size10);
+  line-height: 0.75rem;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+  max-width: 21.25rem;
+}
+
+.confidence {
+  font-family: 'Roboto Condensed';
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size10);
+  line-height: 0.75rem;
+  letter-spacing: 0.02em;
+  color: var(--color-pink);
+}
