@@ -5,6 +5,7 @@
 
 .img {
   width: 21.875rem;
+  height: fit-content;
 }
 
 .back {
@@ -142,4 +143,32 @@
 .counter span:first-child,
 span:last-child {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .img {
+    margin: auto;
+  }
+
+  .back {
+    display: none;
+  }
+
+  .labelContainer {
+    margin-bottom: 0;
+  }
+
+  .counter {
+    border: 0.5px solid var(--color-white);
+  }
+
+  .counter span {
+    color: var(--color-white);
+  }
 }

@@ -17,8 +17,8 @@ export const CommentBlock: React.FC<Props> = ({ comments, nameBouquet }) => (
   <div className={styles.wrapper}>
     {comments.length ? (
       <div className={styles.commentWrapper}>
-        {comments.map((comment) => (
-          <Comment {...comment} />
+        {comments.map((comment, index) => (
+          <Comment {...comment} key={index} />
         ))}
       </div>
     ) : (
