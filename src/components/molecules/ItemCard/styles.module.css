@@ -38,3 +38,13 @@
   text-transform: uppercase;
   color: var(--color-grey3);
 }
+
+.cardImg {
+  width: 22.5rem;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.cardImg:hover {
+  filter: grayscale(0%);
+}

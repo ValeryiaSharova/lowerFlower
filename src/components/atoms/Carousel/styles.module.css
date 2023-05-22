@@ -6,12 +6,6 @@
   padding-bottom: 3.75rem;
 }
 
-@media screen and (max-width: 1400px) {
-  .arrow {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   .cardWrapper {
     display: flex;
