@@ -11,18 +11,18 @@ import styles from 'src/components/pages/Main/Popular/styles.module.css';
 
 const itemCardData: ItemCardProps[] = [
   {
-    imageSrc: 'https://i.ibb.co/J5x1QBd/image-114.png',
+    imageSrc: 'https://i.ibb.co/vY01XCG/image-140.png',
     price: 160,
     title: 'лучший день',
     type: 'new',
   },
   {
-    imageSrc: 'https://i.ibb.co/NsL7WbZ/image-115.png',
+    imageSrc: 'https://i.ibb.co/r3Dr1g4/image-139.png',
     price: 160,
     title: 'лучший день',
   },
   {
-    imageSrc: 'https://i.ibb.co/NZXsZzJ/image-116.png',
+    imageSrc: 'https://i.ibb.co/3CYf6Mn/image-114.png',
     price: 160,
     sale: 187,
     title: 'лучший день',
@@ -59,7 +59,7 @@ export const Popular = () => (
       Самые любимые композиции наших клиентов
     </div>
 
-    <Carousel itemCardData={itemCardData} />
+    <Carousel itemCardData={itemCardData} isBigImg />
 
     <div className={styles.linkWrapper}>
       <Link

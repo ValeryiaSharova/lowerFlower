@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -13,6 +14,7 @@ export type Props = {
   imageSrc: string;
   type?: BadgeProps['type'];
   src?: string;
+  isBigImg?: boolean;
 };
 
 export const ItemCard: React.FC<Props> = ({
@@ -22,10 +24,15 @@ export const ItemCard: React.FC<Props> = ({
   imageSrc,
   type,
   src,
+  isBigImg,
 }) => (
   <div className={styles.wrapper}>
     {type && <Badge type={type} isAbsolute right={-10} top={-10} />}
-    <img src={imageSrc} alt="itemCard" className={styles.cardImg} />
+    <img
+      src={imageSrc}
+      alt="itemCard"
+      className={classNames({ [styles.cardImg]: isBigImg })}
+    />
     {src ? (
       <Link to={src}>
         <span className={styles.title}>{title}</span>

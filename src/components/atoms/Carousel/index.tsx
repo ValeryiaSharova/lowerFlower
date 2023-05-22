@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { Arrow } from 'src/components/atoms/Arrow';
 import {
   ItemCard,
   Props as ItemCardProps,
@@ -10,18 +9,13 @@ import styles from 'src/components/atoms/Carousel/styles.module.css';
 
 export type Props = {
   itemCardData: ItemCardProps[];
+  isBigImg?: boolean;
 };
 
-export const Carousel: React.FC<Props> = ({ itemCardData }) => (
+export const Carousel: React.FC<Props> = ({ itemCardData, isBigImg }) => (
   <div className={styles.cardWrapper}>
-    <div className={styles.arrow}>
-      <Arrow size="big" color="var(--color-green)" rotate={-180} />
-    </div>
     {itemCardData.map((item) => (
-      <ItemCard {...item} key={item.imageSrc} />
+      <ItemCard {...item} key={item.imageSrc} isBigImg={isBigImg} />
     ))}
-    <div className={styles.arrow}>
-      <Arrow size="big" color="var(--color-green)" />
-    </div>
   </div>
 );
