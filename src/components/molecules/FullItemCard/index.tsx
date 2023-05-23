@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { Icon } from 'src/components/atoms/Icon';
 import { Button } from 'src/components/molecules/Button';
+import { CountButton } from 'src/components/molecules/CountButton';
 
 import styles from 'src/components/molecules/FullItemCard/styles.module.css';
 
@@ -67,21 +68,7 @@ export const FullItemCard: React.FC<Props> = ({
         </div>
         <div className={styles.buttonContainer}>
           <Button style="black" text="В корзину" />
-          <div className={styles.counter}>
-            <span
-              onClick={() => setCounter((prevState) => prevState - 1)}
-              role="button"
-            >
-              -
-            </span>
-            <span>{counter}</span>
-            <span
-              onClick={() => setCounter((prevState) => prevState + 1)}
-              role="button"
-            >
-              +
-            </span>
-          </div>
+          <CountButton counter={counter} setCounter={setCounter} />
         </div>
       </div>
     </div>

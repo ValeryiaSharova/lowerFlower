@@ -1,0 +1,33 @@
+.counter {
+  padding: 0.75rem 1rem;
+  border: 0.5px solid var(--color-grey);
+  display: flex;
+  gap: 3.125rem;
+  align-items: center;
+  width: fit-content;
+}
+
+.counter span {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size20);
+  line-height: 1.875rem;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-grey);
+}
+
+.counter span:first-child,
+span:last-child {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .counter {
+    border: 0.5px solid var(--color-white);
+  }
+
+  .counter span {
+    color: var(--color-white);
+  }
+}
