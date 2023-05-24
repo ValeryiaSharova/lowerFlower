@@ -9,7 +9,7 @@ export type Props = {
 };
 
 export const CartItems: React.FC<Props> = ({ items }) => (
-  <>
+  <div className={styles.topBorder}>
     {items.map((item) => (
       <div className={styles.wrapper}>
         <div className={styles.contentWrapper}>
@@ -25,5 +25,5 @@ export const CartItems: React.FC<Props> = ({ items }) => (
         </div>
       </div>
     ))}
-  </>
+  </div>
 );

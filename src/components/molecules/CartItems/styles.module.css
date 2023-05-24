@@ -5,7 +5,7 @@
   justify-content: space-between;
 }
 
-.wrapper:first-child {
+.topBorder {
   border-top: 1px solid var(--color-grey);
 }
 
