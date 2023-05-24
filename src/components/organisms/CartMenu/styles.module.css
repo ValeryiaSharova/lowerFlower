@@ -1,0 +1,54 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.wrapper :global .MuiDrawer-paper {
+  background: var(--color-totalBlack);
+  width: 26.25rem;
+  padding: 1.25rem 1.875rem;
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size30);
+  line-height: 2.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.buttonWrapper {
+  border-top: 1px solid var(--color-grey);
+  padding-top: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.price {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.description {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size14);
+  line-height: 1.125rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
