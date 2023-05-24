@@ -68,7 +68,7 @@ export const FullItemCard: React.FC<Props> = ({
         </div>
         <div className={styles.buttonContainer}>
           <Button style="black" text="В корзину" />
-          <CountButton counter={counter} setCounter={setCounter} />
+          <CountButton counter={counter} setCounter={setCounter} size="m" />
         </div>
       </div>
     </div>
