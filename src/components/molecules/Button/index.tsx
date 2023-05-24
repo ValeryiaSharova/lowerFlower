@@ -12,6 +12,7 @@ export type Props = {
   type?: 'button' | 'reset' | 'submit';
   isSpin?: boolean;
   isDisabled?: boolean;
+  isFullWidth?: boolean;
 };
 
 const styleToClass: Record<Props['style'], string> = {
@@ -26,6 +27,7 @@ export const Button: React.FC<Props> = ({
   style,
   isSpin = false,
   isDisabled = false,
+  isFullWidth = false,
 }) => (
   <button
     // eslint-disable-next-line react/button-has-type
@@ -34,6 +36,7 @@ export const Button: React.FC<Props> = ({
     className={classNames(styles.button, {
       [styleToClass[style]]: !isDisabled,
       [styles.disabled]: isDisabled,
+      [styles.isFullWidth]: isFullWidth,
     })}
     disabled={isDisabled}
   >
