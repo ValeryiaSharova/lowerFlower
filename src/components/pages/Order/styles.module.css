@@ -1,0 +1,187 @@
+.container {
+  position: relative;
+}
+
+.wrapper {
+  padding: 0 165px 188px;
+}
+
+.breadcrumbsWrapper {
+  margin-top: 35px;
+  margin-bottom: 60px;
+}
+
+.titleWrapper {
+  padding-left: 95px;
+  margin-bottom: 80px;
+}
+
+.leftImg {
+  position: absolute;
+  z-index: -1;
+}
+
+.rightImgTop {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.rightImg {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.orderTitle {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #43ffd2;
+  margin-bottom: 40px;
+}
+
+.formWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 220px;
+}
+
+.titleContainer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #43ffd2;
+}
+
+.cartWrapper {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cartWrapper {
+  margin-top: 25px;
+}
+
+.formContainer {
+  width: 100%;
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.deliveryContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.delivery {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #555555;
+}
+
+.addressContainer {
+  display: flex;
+  gap: 30px;
+}
+
+.addressContainer div {
+  width: 100%;
+}
+
+.promocodeWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.promocode {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+  color: #43ffd2;
+}
+
+.promocodeContainer {
+  display: flex;
+}
+
+.promocodeContainer div {
+  gap: 0;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #43ffd2;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.priceContainer button {
+  margin-top: 20px;
+  width: 30%;
+}
+
+.agreement {
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  width: 320px;
+}
+
+.agreement span {
+  text-decoration: underline;
+  color: #d978ac;
+}
+
+.sign {
+  position: absolute;
+  top: 330px;
+  left: 720px;
+}
+
+.sign2 {
+  position: absolute;
+  bottom: 100px;
+  left: 500px;
+}
