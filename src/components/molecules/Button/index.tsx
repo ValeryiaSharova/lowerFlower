@@ -7,7 +7,7 @@ import styles from 'src/components/molecules/Button/styles.module.css';
 
 export type Props = {
   text: string;
-  style: 'color' | 'black';
+  style: 'color' | 'black' | 'green';
   onClick?: () => void;
   type?: 'button' | 'reset' | 'submit';
   isSpin?: boolean;
@@ -18,6 +18,7 @@ export type Props = {
 const styleToClass: Record<Props['style'], string> = {
   black: styles.black,
   color: styles.color,
+  green: styles.green,
 };
 
 export const Button: React.FC<Props> = ({
