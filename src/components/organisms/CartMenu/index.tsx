@@ -1,5 +1,6 @@
 import { Drawer } from '@mui/material';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { Button } from 'src/components/molecules/Button';
 import {
@@ -64,7 +65,9 @@ export const CartMenu: React.FC<Props> = ({ isOpen, handleClose }) => (
             Чтобы узнать стоимость доставки, перейдите к оформлению заказа.
           </div>
         </div>
-        <Button style="black" text="Оформить заказ" isFullWidth />
+        <Link to="/order">
+          <Button style="black" text="Оформить заказ" isFullWidth />
+        </Link>
       </div>
     </div>
   </Drawer>

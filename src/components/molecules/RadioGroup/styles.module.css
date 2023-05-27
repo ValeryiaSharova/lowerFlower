@@ -1,0 +1,36 @@
+.wrapper {
+  gap: 1.25rem;
+}
+
+.title {
+  font-weight: var(--fontWeight-700) !important;
+  font-size: var(--font-size14) !important;
+  line-height: 1.313rem !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase;
+  color: var(--color-green) !important;
+  font-family: 'Oswald' !important;
+}
+
+.container {
+  gap: 0.938rem;
+}
+
+.label :global .MuiRadio-root,
+.label :global .MuiRadio-root ~ span {
+  color: var(--color-black5) !important;
+}
+
+.label :global .Mui-checked,
+.label :global .Mui-checked ~ span {
+  color: var(--color-white) !important;
+}
+
+.label :global .MuiRadio-root ~ span {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+}

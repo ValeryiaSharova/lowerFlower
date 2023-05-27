@@ -1,0 +1,217 @@
+.container {
+  position: relative;
+}
+
+.wrapper {
+  padding: 0 10.313rem 11.75rem;
+}
+
+.breadcrumbsWrapper {
+  margin-top: 2.188rem;
+  margin-bottom: 3.75rem;
+}
+
+.titleWrapper {
+  padding-left: 5.938rem;
+  margin-bottom: 5rem;
+}
+
+.leftImg {
+  position: absolute;
+  z-index: -1;
+}
+
+.rightImgTop {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.rightImg {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.orderTitle {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size30);
+  line-height: 2.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-green);
+  margin-bottom: 2.5rem;
+}
+
+.formWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 13.75rem;
+}
+
+.titleContainer {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.cartWrapper {
+  width: 21.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.cartWrapper {
+  margin-top: 1.563rem;
+}
+
+.formContainer {
+  width: 100%;
+  display: flex;
+  gap: 3.75rem;
+  flex-direction: column;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.deliveryContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.delivery {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-grey);
+}
+
+.addressContainer {
+  display: flex;
+  gap: 1.875rem;
+}
+
+.addressContainer div {
+  width: 100%;
+}
+
+.promocodeWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.promocode {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.06em;
+  color: var(--color-green);
+}
+
+.promocodeContainer {
+  display: flex;
+}
+
+.promocodeContainer div {
+  gap: 0;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size30);
+  line-height: 2.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.text {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.priceContainer button {
+  margin-top: 1.25rem;
+  width: 15.938rem;
+}
+
+.agreement {
+  font-family: 'Roboto Condensed';
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size10);
+  line-height: 0.75rem;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+  width: 20rem;
+}
+
+.agreement span {
+  text-decoration: underline;
+  color: var(--color-pink);
+}
+
+.sign {
+  position: absolute;
+  top: 20.625rem;
+  left: 45rem;
+}
+
+.sign2 {
+  position: absolute;
+  bottom: 6.25rem;
+  left: 31.25rem;
+}
+
+@media screen and (max-width: 1460px) {
+  .wrapper {
+    padding: 0 6.25rem 11.75rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .wrapper {
+    padding: 0 3.125rem 11.75rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cartWrapper,
+  .sign {
+    display: none;
+  }
+
+  .price {
+    font-size: var(--font-size20);
+    line-height: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sign2 {
+    display: none;
+  }
+}
