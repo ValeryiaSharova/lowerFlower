@@ -1,0 +1,203 @@
+.wrapper {
+  height: 62.5rem;
+}
+
+.container {
+  position: relative;
+}
+
+.flower {
+  position: absolute;
+  z-index: -1;
+}
+
+.numberWrapper {
+  margin-left: 15.625rem;
+}
+
+.number {
+  font-family: 'Cormorant';
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size600);
+  line-height: 45.438rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background: linear-gradient(
+    180deg,
+    #163d8f 0%,
+    #163d8f 0%,
+    #4f6cab 54.69%,
+    #b6cdff 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.first {
+  z-index: -2;
+  position: relative;
+}
+
+.second {
+  position: relative;
+  top: 9.375rem;
+  left: 3.75rem;
+}
+
+.third {
+  position: relative;
+  top: -10rem;
+}
+
+.sign {
+  position: absolute;
+  bottom: 12.5rem;
+  right: 28.125rem;
+}
+
+.list1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.list2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  float: right;
+  margin-right: 22.5rem;
+}
+
+.text {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.link {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.04em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1700px) {
+  .sign {
+    right: 12.5rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .sign {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .numberWrapper {
+    margin: auto;
+    text-align: center;
+  }
+
+  .content {
+    margin-right: 10rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .wrapper ~ div {
+    display: none;
+  }
+
+  .highlight {
+    display: none;
+  }
+
+  .list1,
+  .list2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .sign {
+    display: block;
+    right: 3.125rem;
+    bottom: 6.25rem;
+  }
+
+  .number {
+    font-size: 18.75rem;
+    line-height: 22.688rem;
+  }
+
+  .wrapper {
+    height: fit-content;
+  }
+
+  .numberWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 12.5rem);
+  }
+
+  .flower {
+    height: 55.625rem;
+    left: -12.5rem;
+  }
+
+  .second {
+    top: 6.25rem;
+    left: 0;
+  }
+
+  .third {
+    position: relative;
+    top: -5rem;
+    left: -1.875rem;
+  }
+
+  .content {
+    position: relative;
+    bottom: 3.125rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .sign {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .first {
+    left: 1.25rem;
+  }
+
+  .third {
+    left: -3.75rem;
+  }
+
+  .content {
+    margin-right: 3.125rem;
+  }
+}

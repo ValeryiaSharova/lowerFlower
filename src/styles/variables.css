@@ -30,6 +30,8 @@
 
   --color-yellow: #fcff50;
 
+  --color-blue: #163d8f;
+
   /* FONT WEIGHT */
 
   --fontWeight-900: 900;
@@ -39,6 +41,7 @@
 
   /* FONT SIZE */
 
+  --font-size600: 600px;
   --font-size200: 200px;
   --font-size150: 150px;
   --font-size100: 100px;
