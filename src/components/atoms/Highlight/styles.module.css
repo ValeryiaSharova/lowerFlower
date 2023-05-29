@@ -5,3 +5,7 @@
 .pink {
   background: var(--color-purple);
 }
+
+.blue {
+  background: var(--color-blue);
+}
