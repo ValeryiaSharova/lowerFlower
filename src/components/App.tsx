@@ -16,9 +16,11 @@ import { NotFound } from 'src/components/pages/NotFound';
 import { Order } from 'src/components/pages/Order';
 import { Success } from 'src/components/pages/Success';
 import { Provider } from 'src/components/providers/Provider';
+import { ScrollToTop } from 'src/utils/scrollToTop';
 
 export const App: React.FC = () => (
   <Provider>
+    <ScrollToTop />
     <Routes>
       <Route path="/about" element={<About />} />
       <Route path="/card/:id" element={<Card />} />
