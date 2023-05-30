@@ -7,6 +7,8 @@
 
 .fixed {
   background-color: var(--color-totalBlack);
+  display: flex;
+  justify-content: space-between;
 }
 
 .container {
@@ -37,9 +39,21 @@
   border: 1px solid var(--color-green);
 }
 
+.text {
+  display: none;
+  font-family: 'Cormorant';
+  font-weight: var(--fontWeight-300);
+  font-size: var(--font-size20);
+  line-height: 1.5rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  text-align: center;
+}
+
 @media screen and (max-width: 1460px) {
   .wrapper {
-    padding: 0 6.25rem;
+    padding: 0 3.125rem;
   }
 }
 
@@ -58,5 +72,9 @@
 
   .wrapper {
     height: 5rem;
+  }
+
+  .text {
+    display: block;
   }
 }
