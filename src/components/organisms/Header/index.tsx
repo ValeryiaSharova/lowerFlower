@@ -30,6 +30,15 @@ export const Header: React.FC<Props> = ({
         [styles.absolute]: isAbsolute,
       })}
     >
+      <div
+        className={styles.burger}
+        role="button"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <div className={styles.burgerItem} />
+        <div className={styles.burgerItem} />
+        <div className={styles.burgerItem} />
+      </div>
       <div className={styles.logo}>
         <Link to="/">
           <Logo logo="logo" size="m" />
@@ -59,7 +68,6 @@ export const Header: React.FC<Props> = ({
             { text: 'Доставка и оплата', link: '/delivery' },
             { text: 'О нас', link: '/about' },
             { text: 'Контакты', link: '/contacts' },
-            { text: 'FAQ', link: '/faq' },
           ]}
           isAbsolute={isAbsolute}
         />
@@ -79,17 +87,13 @@ export const Header: React.FC<Props> = ({
             />
           )}
         </div>
-        {isFixed && <Cart count={5} />}
       </div>
-      <div
-        className={styles.burger}
-        role="button"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <div className={styles.burgerItem} />
-        <div className={styles.burgerItem} />
-        <div className={styles.burgerItem} />
-      </div>
+      {!isAbsolute && (
+        <>
+          <div className={styles.text}>lover flower</div> <Cart count={5} />
+        </>
+      )}
+
       <BurgerMenu isOpen={isOpen} handleClose={() => setIsOpen(!isOpen)} />
     </div>
   );
