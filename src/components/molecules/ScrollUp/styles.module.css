@@ -1,0 +1,31 @@
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  width: 6.25rem;
+  height: 6.25rem;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.scrollup:hover {
+  opacity: 1;
+}
+
+.showScroll {
+  bottom: 3rem;
+}
+
+@media screen and (max-width: 800px) {
+  .scrollup {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+}
