@@ -54,9 +54,11 @@ export const Order = () => {
         <div className={styles.breadcrumbsWrapper}>
           <Breadcrumbs items={breadcrumbs} />
         </div>
-        <Title title="оформление" />
-        <div className={styles.titleWrapper}>
-          <Title title="заказа" />
+        <div className={styles.title}>
+          <Title title="оформление" />
+          <div className={styles.titleWrapper}>
+            <Title title="заказа" />
+          </div>
         </div>
         <div className={styles.orderTitle}>Оформление заказа</div>
         <div className={styles.formWrapper}>

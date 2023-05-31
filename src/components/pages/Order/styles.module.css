@@ -214,4 +214,18 @@
   .sign2 {
     display: none;
   }
+
+  .title {
+    text-align: center;
+  }
+
+  .titleWrapper {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .wrapper {
+    padding: 0 2rem 11.75rem;
+  }
 }
