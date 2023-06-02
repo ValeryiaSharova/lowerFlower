@@ -5,7 +5,7 @@ import styles from 'src/components/atoms/Highlight/styles.module.css';
 export type Props = {
   width: number;
   height: number;
-  color: 'green' | 'pink' | 'blue';
+  color: 'green' | 'pink' | 'blue' | 'white';
   rotate: number;
   blur: number;
   position?: 'absolute' | 'relative';
@@ -20,6 +20,7 @@ const colorStyles: Record<Props['color'], string> = {
   green: styles.green,
   pink: styles.pink,
   blue: styles.blue,
+  white: styles.white,
 };
 
 export const Highlight: React.FC<Props> = ({

@@ -1,0 +1,260 @@
+.wrapper {
+  position: relative;
+}
+
+.container {
+  margin: 2.188rem 10.313rem 12.5rem;
+}
+
+.titleWrapper {
+  margin-top: 3.75rem;
+}
+
+.innerTitleWrapper {
+  margin-left: 5.938rem;
+}
+
+.columnWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6.25rem;
+}
+
+.attentionWrapper {
+  display: flex;
+  gap: 0.75rem;
+  max-width: 35.625rem;
+  align-items: center;
+  margin-left: 3.75rem;
+}
+
+.attention {
+  font-family: 'Cormorant';
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size100);
+  line-height: 7.563rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-pink);
+}
+
+.attentionInnerWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.attentionTitle {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-pink);
+}
+
+.attentionText {
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.attentionAccent {
+  color: var(--color-green);
+}
+
+.paymentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.paymentTitle {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size20);
+  line-height: 1.875rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-pink);
+}
+
+.paymentContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.875rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.deliveryCostWrapper,
+.deliveryTermsWrapper {
+  margin-left: 7.813rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 40.625rem;
+}
+
+.deliveryTermsWrapper {
+  max-width: 50rem;
+  margin-left: 2.5rem;
+}
+
+.deliveryCostTItle,
+.deliveryTermsItle {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size20);
+  line-height: 1.875rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-pink);
+}
+
+.deliveryConstList,
+.deliveryTermsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.deliveryConstList li,
+.deliveryTermsList li {
+  list-style: disc;
+  font-weight: var(--fontWeight-300);
+  font-size: var(--font-size20);
+  line-height: 1.625rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.deliveryCostWhite {
+  font-weight: var(--fontWeight-700);
+}
+
+.deliveryCostGreen,
+.deliveryTermsGreen {
+  color: var(--color-green);
+}
+
+.dimmerWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+
+.additionalWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.additionalTitle {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size20);
+  line-height: 1.875rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-pink);
+}
+
+.additionalTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  font-weight: var(--fontWeight-300);
+  font-size: var(--font-size20);
+  line-height: 1.875rem;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+}
+
+.additionalList {
+  margin-left: 1.875rem;
+}
+
+.additionalList li {
+  list-style: disc;
+}
+
+.additionalGreen {
+  font-weight: var(--fontWeight-400);
+  color: var(--color-green);
+}
+
+.additionalSign {
+  position: absolute;
+  bottom: -11.25rem;
+  left: 10.313rem;
+}
+
+.flower1 {
+  position: absolute;
+  top: 6.25rem;
+  right: 0;
+  z-index: -1;
+}
+
+.flower2 {
+  position: absolute;
+  bottom: 5rem;
+}
+
+.flower3 {
+  position: absolute;
+  bottom: -34.375rem;
+  z-index: -1;
+  right: 0;
+}
+
+@media screen and (max-width: 1460px) {
+  .container {
+    margin: 2.188rem 6.25rem 12.5rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .container {
+    margin: 2.188rem 3.125rem 12.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .deliveryCostWrapper {
+    margin-left: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .attentionWrapper {
+    margin-left: 0;
+    margin-top: 1.25rem;
+  }
+
+  .titleWrapper {
+    margin-top: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    text-align: center;
+  }
+
+  .innerTitleWrapper {
+    margin-left: 0;
+  }
+
+  .flower1 {
+    width: 50%;
+  }
+
+  .columnWrapper {
+    gap: 3.125rem;
+  }
+
+  .dimmerWrapper {
+    width: 100% !important;
+  }
+}
