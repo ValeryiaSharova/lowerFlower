@@ -74,6 +74,13 @@
   color: var(--color-white);
 }
 
+.paymentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 100%;
+}
+
 .paymentCircle {
   width: 0.688rem;
   height: 0.688rem;

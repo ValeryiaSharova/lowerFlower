@@ -59,9 +59,11 @@ const AdditionalCard: React.FC<AdditionalCardType> = ({
 );
 
 const PaymentCard: React.FC<PaymentCardType> = ({ description }) => (
-  <Dimmer borderRadius={20} padding="20px 32px">
-    <div className={styles.paymentCircle} />
-    <div className={styles.paymentDesc}>{description}</div>
+  <Dimmer borderRadius={20} padding="20px 32px" width={255}>
+    <div className={styles.paymentWrapper}>
+      <div className={styles.paymentCircle} />
+      <div className={styles.paymentDesc}>{description}</div>
+    </div>
   </Dimmer>
 );
 
