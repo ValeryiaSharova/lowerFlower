@@ -1,0 +1,16 @@
+.white {
+  color: var(--color-white);
+}
+
+.green {
+  color: var(--color-green);
+}
+
+.wrapper {
+  font-family: 'Cormorant';
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size60);
+  line-height: 4rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
