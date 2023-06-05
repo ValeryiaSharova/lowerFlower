@@ -14,3 +14,10 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 1150px) {
+  .wrapper {
+    font-size: var(--font-size40);
+    line-height: 2.5rem;
+  }
+}

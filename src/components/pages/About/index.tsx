@@ -55,7 +55,11 @@ export const About = () => (
     </Dimmer>
     <div className={styles.infoWrapper}>
       <div className={styles.infoInnerWrapper}>
-        <BeautyText color="green" text="гарантии" />
+        <BeautyText
+          color="green"
+          text="гарантии"
+          className={styles.guaranteesTitle}
+        />
         <div className={styles.infoWrapperText}>
           Каждый цветок уникален и чтобы вы были уверены в качестве, мы пришлем
           вам фотографию именно вашего букета до его отправки получателю. Вся
