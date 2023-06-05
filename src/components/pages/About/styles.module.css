@@ -1,0 +1,212 @@
+.wrapper {
+  position: relative;
+}
+
+.flower1 {
+  position: absolute;
+  z-index: -1;
+}
+
+.flower2 {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  z-index: -1;
+}
+
+.flower3 {
+  position: absolute;
+  bottom: -23.75rem;
+  right: 0;
+  z-index: -1;
+}
+
+.breadcrumbsWrapper {
+  margin: 2.188rem 10.313rem 0;
+}
+
+.title {
+  margin-top: 2.875rem;
+  margin-left: 16.25rem;
+}
+
+.subTitleWrapper {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 6.25rem;
+  margin-left: 21.875rem;
+}
+
+.subTitle {
+  max-width: 15rem;
+}
+
+.line {
+  border-bottom: 1px solid var(--color-green);
+  width: 3.75rem;
+  margin-bottom: 1.875rem;
+}
+
+.dimmer {
+  padding: 2.5rem 10.313rem 2.5rem 1.25rem;
+  margin-top: 1.125rem;
+  float: right;
+  width: 60% !important;
+}
+
+.dimmerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.dimmerTitle {
+  font-weight: var(--fontWeight-300);
+  font-size: var(--font-size20);
+  line-height: 1.625rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.dimmerDescription {
+  font-weight: var(--fontWeight-300);
+  font-size: var(--font-size20);
+  line-height: 1.625rem;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+}
+
+.infoWrapper {
+  clear: both;
+  padding-top: 6.25rem;
+  margin-left: 21.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6.25rem;
+}
+
+.infoInnerWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.infoWrapperText {
+  font-weight: var(--fontWeight-300);
+  font-size: var(--font-size20);
+  line-height: 1.875rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  max-width: 51.563rem;
+}
+
+.infoInnerTitle {
+  max-width: 43.438rem;
+}
+
+.infoWrapperList {
+  margin-left: 19.063rem;
+  font-weight: var(--fontWeight-300);
+  font-size: var(--font-size20);
+  line-height: 2.125rem;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+}
+
+.infoWrapperList li {
+  list-style: disc;
+}
+
+.endText {
+  margin: 10rem 10.313rem 2.5rem 10.313rem;
+  max-width: 62.5rem;
+}
+
+.endSubText {
+  max-width: 27.813rem;
+  font-weight: var(--fontWeight-300);
+  font-size: var(--font-size20);
+  line-height: 1.875rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-left: 22.188rem;
+  margin-bottom: 12.5rem;
+}
+
+@media screen and (max-width: 1460px) {
+  .breadcrumbsWrapper {
+    margin: 2.188rem 6.25rem 0;
+  }
+
+  .endText {
+    margin: 10rem 6.25rem 2.5rem 6.25rem;
+    max-width: 62.5rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .breadcrumbsWrapper {
+    margin: 2.188rem 3.125rem 0;
+  }
+
+  .endText {
+    margin: 6.25rem 3.125rem 2.5rem 3.125rem;
+    max-width: 62.5rem;
+    max-width: none;
+  }
+
+  .title {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .subTitleWrapper {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 3.125rem;
+    margin-left: 3.125rem;
+  }
+
+  .dimmer {
+    padding: 2.5rem 10.313rem 2.5rem 1.25rem;
+    float: none;
+    margin: 1.125rem 3.125rem;
+    width: calc(100% - 6.25rem) !important;
+  }
+
+  .infoWrapper {
+    clear: none;
+    padding-top: 0;
+    margin: 1.875rem 3.125rem;
+    gap: 3.125rem;
+  }
+
+  .infoWrapperText {
+    max-width: none;
+  }
+
+  .guaranteesTitle {
+    text-align: center;
+  }
+
+  .infoWrapperList {
+    margin-left: 0;
+    align-self: flex-end;
+  }
+
+  .endSubText {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dimmer {
+    padding: 2.5rem;
+  }
+}

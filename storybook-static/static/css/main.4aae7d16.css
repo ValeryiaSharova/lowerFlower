@@ -435,6 +435,7 @@ template {
   --color-grey: #555555;
   --color-grey2: #7c7c7c;
   --color-grey3: #939393;
+  --color-grey4: #6b535f;
   --color-white: #ffffff;
 
   --color-darkGreen: #01281f;
@@ -452,6 +453,7 @@ template {
   --color-red: #ff3a44;
 
   --color-yellow: #fcff50;
+  --color-yellow2: #c8a156;
 
   --color-blue: #163d8f;
 
@@ -468,6 +470,7 @@ template {
   --font-size200: 200px;
   --font-size150: 150px;
   --font-size100: 100px;
+  --font-size60: 60px;
   --font-size40: 40px;
   --font-size30: 30px;
   --font-size20: 20px;
@@ -559,6 +562,30 @@ a {
 .styles_absolute__DAVv- {
   position: absolute;
   z-index: 1;
+}
+
+.styles_white__2\+Qy9 {
+  color: var(--color-white);
+}
+
+.styles_green__FiWQG {
+  color: var(--color-green);
+}
+
+.styles_wrapper__QqfAE {
+  font-family: 'Cormorant';
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size60);
+  line-height: 4rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1150px) {
+  .styles_wrapper__QqfAE {
+    font-size: var(--font-size40);
+    line-height: 2.5rem;
+  }
 }
 
 .styles_text__N\+ijU {
@@ -1191,6 +1218,13 @@ span:last-child {
   background: var(--color-blue);
 }
 
+.styles_white__S\+KH6 {
+  background: var(--color-grey4);
+}
+.styles_yellow__nUMg7 {
+  background-color: var(--color-yellow2);
+}
+
 .styles_wrapper__Y2Sjb {
   font-weight: var(--fontWeight-700);
   font-size: var(--font-size12);
@@ -1624,6 +1658,13 @@ span:last-child {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--color-white);
+}
+
+.styles_paymentWrapper__7bMvE {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 100%;
 }
 
 .styles_paymentCircle__98uSt {
@@ -2448,4 +2489,4 @@ span:last-child {
 }
 
 
-/*# sourceMappingURL=main.2da7f6d5.css.map*/
+/*# sourceMappingURL=main.4aae7d16.css.map*/
