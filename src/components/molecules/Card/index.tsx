@@ -68,7 +68,7 @@ const PaymentCard: React.FC<PaymentCardType> = ({ description }) => (
 );
 
 const ContactCard: React.FC<ContactCardType> = ({ description, title }) => (
-  <Dimmer borderRadius={20} padding={27}>
+  <Dimmer borderRadius={20} padding={27} width={255}>
     <div className={styles.contactWrapper}>
       <div className={styles.contactTitle}>{title}</div>
       <div className={styles.contactDesc}>{description}</div>

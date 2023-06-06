@@ -100,12 +100,21 @@
 }
 
 .contactWrapper {
-  height: 15.938rem;
+  height: 12.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.875rem;
   text-align: center;
+}
+
+.contactTitle {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size20);
+  line-height: 1.875rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-green);
 }
 
 .contactDesc {
