@@ -13,6 +13,11 @@
 .white {
   background: var(--color-grey4);
 }
+
 .yellow {
   background-color: var(--color-yellow2);
+}
+
+.red {
+  background-color: var(--color-red2);
 }
