@@ -1,0 +1,142 @@
+.wrapper {
+  margin: 2.188rem 10.313rem 12.5rem;
+}
+
+.flower1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.flower2 {
+  position: absolute;
+  left: 0;
+  top: 10rem;
+  z-index: -1;
+}
+
+.title {
+  margin-top: 2.875rem;
+  margin-left: 5.938rem;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.875rem;
+  margin-top: 2.5rem;
+}
+
+.contactUsWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8.75rem;
+  gap: 1.875rem;
+}
+
+.line {
+  border-bottom: 1px solid var(--color-green);
+  max-width: 15.938rem;
+  width: 100%;
+}
+
+.contactUsInnerWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.firstInnerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.secondInnerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactUsDescription {
+  max-width: 15.938rem;
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size14);
+  line-height: 1.313rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  max-width: 27.813rem;
+  align-self: flex-end;
+  position: relative;
+}
+
+.sign {
+  position: absolute;
+  right: 43.75rem;
+}
+
+.confidence {
+  font-family: 'Roboto Condensed';
+  font-weight: var(--fontWeight-400);
+  font-size: var(--font-size10);
+  line-height: 0.75rem;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+}
+
+.confidence span {
+  color: var(--color-red3);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1460px) {
+  .wrapper {
+    margin: 2.188rem 6.25rem 12.5rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .wrapper {
+    margin: 2.188rem 3.125rem 12.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .title {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .firstInnerWrapper {
+    justify-content: center;
+  }
+
+  .contactUsDescription {
+    display: none;
+  }
+
+  .secondInnerWrapper {
+    justify-content: center;
+  }
+
+  .form {
+    align-self: center;
+  }
+
+  .sign {
+    display: none;
+  }
+}
