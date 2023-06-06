@@ -451,6 +451,8 @@ template {
   --color-pink: #d978ac;
 
   --color-red: #ff3a44;
+  --color-red2: #922d2d;
+  --color-red3: #8b3131;
 
   --color-yellow: #fcff50;
   --color-yellow2: #c8a156;
@@ -1221,8 +1223,13 @@ span:last-child {
 .styles_white__S\+KH6 {
   background: var(--color-grey4);
 }
+
 .styles_yellow__nUMg7 {
   background-color: var(--color-yellow2);
+}
+
+.styles_red__c7SVO {
+  background-color: var(--color-red2);
 }
 
 .styles_wrapper__Y2Sjb {
@@ -1686,12 +1693,21 @@ span:last-child {
 }
 
 .styles_contactWrapper__NBDja {
-  height: 15.938rem;
+  height: 12.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.875rem;
   text-align: center;
+}
+
+.styles_contactTitle__\+AlIu {
+  font-weight: var(--fontWeight-700);
+  font-size: var(--font-size20);
+  line-height: 1.875rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-green);
 }
 
 .styles_contactDesc__lIeiR {
@@ -2489,4 +2505,4 @@ span:last-child {
 }
 
 
-/*# sourceMappingURL=main.4aae7d16.css.map*/
+/*# sourceMappingURL=main.62d482d9.css.map*/
